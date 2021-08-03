@@ -1,0 +1,1266 @@
+/*******************************************************************************************/
+/*******************************************************************************************/
+/*******************************************************************************************/
+/*******************************************************************************************/
+/*******************************************************************************************/
+/*******************************************************************************************/
+
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background: #111111;
+}
+
+
+/* ESTILOS PERSONALIZADOS*/
+
+@media (max-width: 768px) {
+  #fraseUno {
+    /* display: none; */
+    width: 100px;
+  }
+}
+
+/* @media (max-width: 768px) {
+  #fraseDos {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  #fraseTres {
+    width: 200px;
+  }
+} */
+
+footer {
+
+  padding-top: 150px;
+
+  padding-bottom: 15px;
+}
+
+a, ul {
+
+    text-decoration: none;
+    
+    color: rgb(255, 255, 255);
+    
+    list-style-type: none;
+  
+  }
+  
+  .header h2 {
+  
+    padding-top: 40px;
+
+    font-family: 'Roboto Mono', monospace;
+
+    font-size: 40px;
+  
+  }
+  
+  #frase1 {
+    padding-top: 150px;
+  
+    padding-bottom: 150px;
+  
+    /* height: 600px; */
+  
+  }
+  
+  #fraseUno, #fraseDos, #fraseTres {
+  
+    width: 650px;
+  
+  }
+  
+  
+  /* Título <Acerca> */
+  #acerca h2.mayorIgual {
+      
+    color: rgb(45, 150, 135);
+    
+    font-size: 40px;
+    
+    font-weight: 300;
+    
+  }
+  
+  /* Estilos al primer párrafo de sección "Acerca de mí" */
+  p.pparrafo{
+  
+    font-family: 'Roboto Mono', monospace;
+    
+    font-weight:300;
+    
+    font-style:italic;
+    
+    line-height:37px;
+    
+    margin:0px 0px -4px;
+    
+    padding:0px 0px 7px;
+    
+    font-size: 30px;
+  
+    color: rgb(45, 150, 135);
+  
+  }
+  
+  /* Estilos al segundo párrafo de sección "Acerca de mí" */
+  p.sparrafo{
+    font-family: "open sans", sans-serif;
+    
+    font-weight:300;
+    
+    color: rgb(233, 177, 113);
+    
+    font-size:21px;
+    
+    line-height:30px;
+    
+    margin:21px 0px;
+  }
+  
+  /* Estilos al tercer párrafo de sección "Acerca de mí" */
+  p.tparrafo{
+    font-family: "open sans", sans-serif;
+    
+    font-size:21px;
+    
+    line-height: 30px;
+    
+    margin:21px 0px 0px;
+    
+    padding-bottom:45px;
+    
+    color: rgb(45, 150, 135);
+  }
+  
+  /* Estilos a los párrafos de la sección "Acerca de mí"  */
+  #texto p {
+    margin-left: 35px;
+  }
+  
+  /* Estilos al enlace "Más sobre mí" */
+  .btnAcercaDeMi a {
+    
+    color: rgb(45, 150, 135);
+    
+    font-size: 25px;
+  
+    margin-left: 35px;
+  
+    border: 1px solid rgb(45, 150, 135);
+  
+    padding: 15px ;
+  
+  }
+  
+  /* Estilos aplicados al botón "Mas sobre mí" al hacer hover */
+  .btnAcercaDeMi a:hover {
+  
+    transition: transform .2s;
+  
+    transform: scale(1.6);
+  
+  }
+  
+  
+  /* Estilos aplicados al título <acerca>  */
+  #texto .mayorIgual {
+  
+    padding-top: 35px;
+  
+    padding-bottom: 35px;
+  
+  }
+  
+  /* Estilos aplicados a la imagen JM de la sección "Acerca de mi" */
+  .imagenJm {
+  
+    width: 360px;
+            
+    margin-top: 120px;
+  
+    border-radius: 50%;
+  
+  }
+  
+  
+  /*ESTILOS SECCION SKILLS*/
+  #skills, h2, h3 {
+  
+    color: #fff;
+    
+  }
+  
+  #skills h4, h5, ul {
+  
+    margin-left: 35px;
+  
+  }
+  
+  #skills h2.mayorIgual {
+      
+    color: #e4dda4;
+    
+    font-size: 40px;
+    
+    font-weight: 300;
+    
+  }
+  
+  #textoSkills h3 {
+  
+    font-family: 'Roboto Mono', monospace;
+    
+    font-weight:300;
+    
+    font-style:italic;
+    
+    line-height:37px;
+    
+    margin:0px 0px -4px;
+    
+    padding:0px 0px 7px;
+    
+    font-size: 30px;
+  
+  }
+  
+  /* #textoSkills p {
+  
+    margin-left: 35px;
+  } */
+  
+  #textoSkills .mayorIgual {
+  
+    padding-top: 35px;
+  
+    padding-bottom: 35px;
+  
+  }
+  
+  #textoSkills h3, li {
+  
+    margin-left: 35px;
+  
+  }
+  
+  #frase2 {
+  
+    padding-top: 150px;
+  
+    padding-bottom: 150px;
+    
+    /* height: 600px; */
+  
+  }
+
+  #textoSkills h4 {
+
+    font-weight: 100;
+
+    padding-bottom: 20px;
+
+  }
+
+  #textoSkills h5 {
+
+    padding-top: 20px;
+
+  }
+
+
+  
+  /*********************************************************************************************************
+  
+  ESTILOS DE LA SECCIÓN "PROYECTOS"
+  
+  **********************************************************************************************************/
+  
+  /* Aplicamos el estilo display grid en la sección "Proyectos"  */
+  #proyectos {
+  
+    display: grid;
+    
+    grid-template-columns: 100%;
+    
+    grid-row-gap: 45px;
+  
+  }
+  
+  /* Título <proyectos> */
+  #proyectos h2.mayorIgual {
+      
+    color: rgb(155, 45, 122);
+    
+    font-size: 40px;
+    
+    font-weight: 300;
+    
+  }
+  
+  /* Estilos aplicados a las etiquetas p,h3,h4 del div de la sección "proyectos" */
+  #proyectos p,h3 {
+  
+    margin-left: 35px;
+  
+  }
+  
+  /* Estilos aplicados a las clases de todos los proyectos para crear el borde, espaciado interno y margen*/
+  .proyect1, .proyect2, .proyect3, .proyect4, .proyect5  {
+    
+    border: 2px solid rgb(155, 45, 122);
+    
+    padding-top: 20px;
+    
+    padding-bottom: 20px;
+    
+    margin-left: 35px;
+  
+  }
+  
+  /* Estilos aplicados a los títulos h3 de cada proyecto; padding superior y fuente  */
+  .proyect1 h3, .proyect2 h3, .proyect3 h3, .proyect4 h3, .proyect5 h3 {
+    
+    padding-bottom: 30px;
+    
+    font-size: 28px;
+  
+    color: #fff;
+  
+  }
+  
+  /* Estilos aplicacios al */
+  .proyect1 a, .proyect2 a, .proyect3 a, .proyect4 a, .proyect5 a {
+  
+    padding-top: 30px;
+  
+    color: #fff;
+  
+    margin-left: 35px;
+    
+  }
+  
+  /* Estilos aplicacios al */
+  .proyect1 p, .proyect2 p, .proyect3 p, .proyect4 p, .proyect5 p {
+  
+    color: #fff;
+    
+  }
+  
+  /* Estilos aplicados a la clase que contiene el link para ver el sitio web de cada proyecto */
+  .sitiosWeb {
+  
+    margin-left: 25px;
+  
+  }
+  
+  
+  /* ANIMACIONES DE LA SECCIÓN PROYECTOS */
+  .proyect1 {
+  
+    transition: width 2s;
+  
+  }
+  
+  .proyect1:hover, .proyect2:hover, .proyect3:hover, .proyect4:hover, .proyect5:hover  {
+  
+    width: 100%;
+  
+    background-color: rgb(155, 45, 122);
+  
+  
+  }
+  
+  /*********************************************************************************************************
+  
+  ESTILOS DE LA SECCIÓN "CONTACTO"
+  
+  **********************************************************************************************************/
+  
+  /* Estilos aplicados al contenedor de la sección Contacto*/
+  #contacto {
+  
+    padding-top: 100px;
+  
+  }
+  
+  #contactame {
+  
+    color: #fff;
+  
+  }
+  
+  /* Título <contacto> */
+  #contacto h2.mayorIgual {
+      
+    color: rgb(255, 255, 255);
+    
+    font-size: 40px;
+    
+    font-weight: 300;
+    
+  }
+  
+  /* Estilos aplicados al título <contacto> */
+  #contacto .mayorIgual {
+  
+    padding-top: 35px;
+  
+    padding-bottom: 35px;
+  
+  }
+  
+  
+  
+  .formContact h3, p{
+    
+    padding-bottom: 22px;
+  
+  }
+  
+  #contacto h3,p,form {
+  
+    margin-left: 35px;
+  
+  }
+  
+  
+  /* Estilos a los campos del formulario */
+  
+  /* .name {
+  
+    display: block;
+  
+    padding-top: 20px;
+  
+    width: 600px;
+  
+    border: 0;
+  
+    background-color: #212529;
+  
+    border-bottom: 1px solid rgb(155, 45, 122);
+  
+    outline: none;
+  
+    color: #fff;
+  
+    
+  } */
+  
+  /* .mail {
+    
+    display: block;
+  
+    padding-top: 20px;
+  
+    width: 600px;
+  
+    background-color: #212529;
+  
+    outline: none;
+  
+    border: 0;
+  
+    border-bottom: 1px solid rgb(155, 45, 122);
+  
+  } */
+  
+  /* .newsletter {
+  
+    display: inline;
+  
+    padding-top: 20px;
+  
+  } */
+  
+  /* .submit {
+  
+    display: block;
+  
+    padding: 15px;
+  
+    background-color: #212529;
+  
+    border: 0;
+  
+    color: #fff;
+  
+    border: 2px solid rgb(155, 45, 122);
+  
+  } */
+  
+  /* .reset {
+  
+    display: block;
+  
+    padding-top: 20px;
+  
+    padding: 20px 0 20px 0;
+  
+  } */
+  
+  /* input .name {
+  
+    background-color: #212529;
+  
+    height: 200px;
+  
+    border: 0;
+  
+    color: blanchedalmond;
+  
+  } */
+  
+  /* label.name, label.email {
+  
+    display: none;
+  
+  } */
+  
+  
+  /* div #name {
+  
+    padding-bottom: 25px; 
+  
+  } */
+  
+  /* #message .message {
+  
+    width: 600px;
+  
+    background-color: #212529;
+  
+    outline: none;
+  
+    border: 0;
+  
+    border-bottom: 1px solid rgb(155, 45, 122);
+  
+    color: blanchedalmond;
+  
+  } */
+  
+  /* .message {
+  
+    padding-top: 45px;
+  
+    color: antiquewhite;
+  
+  
+  }
+  
+  .name ::text {
+  
+    color: #fff;
+  
+  } */
+  
+  /* #btnForm {
+  
+    padding-top: 25px;
+  
+  }
+  
+  .reset {
+  
+    border: 0;
+    
+    background-color: #212529;
+  
+    color: #fff;
+  
+  }
+  
+  
+  ::placeholder {
+  
+    color: #fff;
+  
+    font-size: 20px;
+  
+  } */
+  
+  
+  
+  .formContact h3, p {
+  
+    color: #fff;
+  
+  }
+  
+    
+  #footer {
+  
+    padding-bottom: 0px;
+  
+  }
+  
+  /*********************************************************************************************************
+  
+  
+                                      PAGINA ACERCA DE MÍ
+  
+  
+  **********************************************************************************************************/
+
+  .header {
+
+    padding-top: 200px;
+   
+    height: 450px;
+
+    background: linear-gradient(45deg, #BB1881, #F88B50);
+/* 
+    background-image: url(../assets/img/header1.jpg);
+
+    background-repeat: no-repeat;
+
+    background-attachment:fixed;
+
+    background-size: 100% 100%; */
+
+  }
+
+  
+  #aboutSec1, #aboutSec2 {
+
+    padding-top: 69px;
+  
+  }
+
+  #aboutSec1 p {
+
+    font-family: 'Roboto Mono', monospace;
+
+    font-style: italic;
+
+    font-size: 20px;
+
+    color: rgb(45, 150, 135);
+
+  }
+
+  #aboutSec2 p {
+
+    font-family: 'Roboto Mono', monospace;
+
+    font-style: italic;
+
+    font-size: 20px;
+
+    /* color: rgb(233, 177, 113); */
+    color: #fff;
+
+  }
+  
+  
+  .imagenJm2 {
+  
+    margin-top: 0px;
+   
+    width: 580px;
+  
+  }
+  
+  #acercaParteDos p {
+  
+    font-family: "open sans", sans-serif;
+
+    font-size:20px;
+    
+    line-height: 30px;
+    
+    margin-left: 150px;
+    
+    padding-bottom:45px;
+    
+    color: rgb(45, 150, 135);
+    
+    text-align: left;
+  }
+  
+  /* Estilos aplicados al botón "Curriculum Vitae (PDF) de la página "Acerca de mí" */
+  .cv {
+  
+    color: rgb(233, 177, 113);
+    
+    font-size: 19px;
+    
+    margin-left: 35px;
+    
+    background-color:#212529;
+    
+    padding: 25px;
+  
+    border: 0;
+    
+    border: 1px solid rgb(233, 177, 113);
+    
+    margin-left: 150px;
+
+      
+  }
+
+  #btnCv {
+
+    padding-top: 25px;
+
+  }
+  
+  
+  .imagenJm3 {
+    
+    margin-top: 22px;
+   
+    width: 470px;
+  
+  }
+  
+  /* Sección Acerca de mí  */
+  
+  #acercaDeMiUno {
+  
+    display: grid;
+  
+    grid-template-columns: 50% 50%;
+  
+    grid-column-gap: 36px
+  
+  
+  }
+  
+  #acercaDeMiDos {
+  
+    display: grid;
+  
+    grid-template-columns: 50% 50%;
+  
+  
+  }
+  
+  #acercaDeMiDos p {
+  
+    font-family: "open sans", sans-serif;
+
+    font-size:20px;
+    
+    line-height: 30px;
+
+    padding-bottom:45px;
+
+    color: #fff;
+
+    text-align: left;
+  
+  }
+  
+  /* Estilos aplicados al título <acerca>  */
+  #texto .mayorMenor {
+  
+    padding-top: 35px;
+  
+    padding-bottom: 35px;
+  
+  
+  }
+  
+  /* Título <Acerca> */
+  #acercaDeMiUno h2.mayorMenor, #acercaDeMiDos h2.mayorMenor {
+    
+    color: rgb(45, 150, 135);
+    
+    font-size: 40px;
+    
+    font-weight: 300;
+    
+  }
+
+
+  /*********************************************************************************************************
+  
+  
+                                      PAGINA SKILLS
+  
+  
+  **********************************************************************************************************/
+
+  #headerSkills {
+
+    padding-top: 200px;
+
+    height: 450px;
+
+    background-image: url(../assets/img/header1.jpg);
+
+    background-repeat: no-repeat;
+
+    background-attachment:fixed;
+
+    background-size: 100% 100%;
+
+  }
+
+  #skills {
+
+    padding-top: 69px;
+
+  }
+
+/*********************************************************************************************************
+  
+  
+                                      PAGINA PROJECT
+  
+  
+  **********************************************************************************************************/
+
+  /* #headerProject {
+
+    padding-top: 200px;
+
+    height: 450px;
+
+    background-image: url(../assets/img/header1.jpg);
+
+    background-repeat: no-repeat;
+
+    background-attachment:fixed;
+
+    background-size: 100% 100%;
+
+  } */
+
+  #proyectos {
+
+    padding-top: 69px;
+
+  }
+
+  .textoProyecto h3 {
+
+    font-family: 'Roboto Mono', monospace;
+    
+    font-weight:300;
+
+    font-size: 30px;
+
+    color: #fff;
+
+  }
+
+  .textoProyecto p {
+
+    padding-bottom: 0px;
+
+    padding-top: 15px;
+
+    font-family: "open sans", sans-serif;
+    
+    font-weight:300;
+
+    font-size: 20px;
+
+    color: #fff;
+
+  }
+
+.btnProject {
+
+    margin-left: 10px;
+
+    color: rgb(233, 177, 113);
+    
+    font-size: 16px;
+    
+    background-color: #212529;
+    
+    padding: 10px;
+  
+    border: 0;
+    
+    border: 1px solid rgb(233, 177, 113);
+    
+}
+
+.btnProject:hover {
+
+  color: #000;
+
+  background-color: rgb(233, 177, 113);;
+
+}
+
+
+
+/*********************************************************************************************************
+  
+  
+                                      PAGINA CONTACTO
+  
+  
+  **********************************************************************************************************/
+
+  .flip-card {
+
+      display: none;
+
+  }
+
+  .formContact {
+
+    background: linear-gradient(45deg, #BB1881, #F88B50);
+
+    font-family: sans-serif
+    
+  }
+  
+  .contact-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .flip-card {
+    border-radius: 0.5em;
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    width: 5em;
+    padding: 0.5em;
+    border: 0.1em solid #fff;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9;
+  }
+  .envelope {
+    position: relative;
+    display: block;
+    width: 30em;
+    height: 35em;
+    margin: 0 auto;
+  }
+  .envelope.active .content {
+    padding: 15em 2em 2em;
+  }
+  .envelope.active .paper.front,
+  .envelope.active .paper.back {
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .envelope.active .paper.front {
+    animation-name: envelope-front;
+  }
+  .envelope.active .paper.back {
+    animation-name: envelope-back;
+  }
+  .envelope.active .paper.back:before {
+    animation-duration: 0.5s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1.25s;
+    animation-name: envelope-back-before;
+  }
+  .envelope.active .bottom-wrapper {
+    transform: rotateX(180deg);
+  }
+  .envelope.active .bottom-wrapper:after {
+    z-index: 0;
+    opacity: 1;
+  }
+  .envelope .content {
+    padding: 2em;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 9;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 1s;
+  }
+  .envelope .top-wrapper,
+  .envelope .bottom-wrapper {
+    box-sizing: border-box;
+    /* background: #03a9f5; */
+    background: #212529;
+    color: #fff;
+  }
+  .envelope .top-wrapper {
+    padding: 2em 2em 0;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  .envelope .bottom-wrapper {
+    padding: 0 2em 2em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    transition: all 0.5s ease-in-out;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden;
+    margin-top: -1px;
+  }
+  .envelope .bottom-wrapper:after {
+    position: absolute;
+    content: '';
+    display: block;
+    opacity: 0;
+    background: #03a9f5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .envelope form label {
+    display: block;
+    padding-bottom: 0.5em;
+  }
+  .envelope form input,
+  .envelope form textarea {
+    width: 100%;
+    box-shadow: 0;
+    background: transparent;
+    color: #fff;
+  }
+  .envelope form input {
+    border-width: 0 0 0.1em;
+    border-color: #fff;
+    border-style: solid;
+  }
+  .envelope form textarea {
+    border: 0.1em solid #fff;
+    border-radius: 0.25em;
+  }
+  .envelope form .submit-card {
+    background: #fff;
+    color: #222;
+    text-align: center;
+    padding: 0.5em;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+  }
+  .envelope form .input {
+    padding-bottom: 1em;
+  }
+  .envelope .paper {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    overflow: hidden;
+  }
+  .envelope .paper.back {
+    top: 0;
+  }
+  .envelope .paper.back:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    margin-bottom: -1px;
+    border-style: solid;
+    border-width: 0 15em 10em 15em;
+    border-color: transparent transparent #d3d3d3 transparent;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    z-index: 0;
+  }
+  .envelope .paper.back:after {
+    content: '';
+    display: block;
+    background-color: #d3d3d3;
+    width: 30em;
+    height: 20em;
+  }
+  .envelope .paper.front {
+    top: 10em;
+    box-shadow: 0.1em 0.5em 0.5em rgba(0,0,0,0.25);
+    z-index: 0;
+  }
+  .envelope .paper.front:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10em 15em 0 15em;
+    border-color: transparent #fff;
+  }
+  .envelope .paper.front:after {
+    content: '';
+    display: block;
+    width: 30em;
+    height: 10em;
+    background: #fff;
+    margin-top: -1px;
+  }
+  @-moz-keyframes envelope-front {
+    0 {
+      top: 10em;
+      z-index: 0;
+    }
+    50% {
+      top: 15em;
+      z-index: 9;
+    }
+    100% {
+      top: 10em;
+      z-index: 9;
+    }
+  }
+  @-webkit-keyframes envelope-front {
+    0 {
+      top: 10em;
+      z-index: 0;
+    }
+    50% {
+      top: 15em;
+      z-index: 9;
+    }
+    100% {
+      top: 10em;
+      z-index: 9;
+    }
+  }
+  @-o-keyframes envelope-front {
+    0 {
+      top: 10em;
+      z-index: 0;
+    }
+    50% {
+      top: 15em;
+      z-index: 9;
+    }
+    100% {
+      top: 10em;
+      z-index: 9;
+    }
+  }
+  @keyframes envelope-front {
+    0 {
+      top: 10em;
+      z-index: 0;
+    }
+    50% {
+      top: 15em;
+      z-index: 9;
+    }
+    100% {
+      top: 10em;
+      z-index: 9;
+    }
+  }
+  @-moz-keyframes envelope-back {
+    0 {
+      top: 0;
+    }
+    50% {
+      top: 5em;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @-webkit-keyframes envelope-back {
+    0 {
+      top: 0;
+    }
+    50% {
+      top: 5em;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @-o-keyframes envelope-back {
+    0 {
+      top: 0;
+    }
+    50% {
+      top: 5em;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @keyframes envelope-back {
+    0 {
+      top: 0;
+    }
+    50% {
+      top: 5em;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @-moz-keyframes envelope-back-before {
+    0 {
+      border-color: transparent transparent #d3d3d3 transparent;
+      transform: rotateX(0deg);
+      z-index: 0;
+    }
+    100% {
+      border-color: transparent transparent #fff transparent;
+      transform: rotateX(180deg);
+      z-index: 99;
+      position: relative;
+    }
+  }
+  @-webkit-keyframes envelope-back-before {
+    0 {
+      border-color: transparent transparent #d3d3d3 transparent;
+      transform: rotateX(0deg);
+      z-index: 0;
+    }
+    100% {
+      border-color: transparent transparent #fff transparent;
+      transform: rotateX(180deg);
+      z-index: 99;
+      position: relative;
+    }
+  }
+  @-o-keyframes envelope-back-before {
+    0 {
+      border-color: transparent transparent #d3d3d3 transparent;
+      transform: rotateX(0deg);
+      z-index: 0;
+    }
+    100% {
+      border-color: transparent transparent #fff transparent;
+      transform: rotateX(180deg);
+      z-index: 99;
+      position: relative;
+    }
+  }
+  @keyframes envelope-back-before {
+    0 {
+      border-color: transparent transparent #d3d3d3 transparent;
+      transform: rotateX(0deg);
+      z-index: 0;
+    }
+    100% {
+      border-color: transparent transparent #fff transparent;
+      transform: rotateX(180deg);
+      z-index: 99;
+      position: relative;
+    }
+  }
+  

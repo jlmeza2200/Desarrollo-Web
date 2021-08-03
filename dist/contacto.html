@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Skills</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="./css/styles.css" rel="stylesheet" />
+        <link href="../src/scss/estilos.css" rel="stylesheet" />
+
+        <!-- <link href="./css/custom.css" rel="stylesheet" /> -->
+    </head>
+    <body id="page-top" class="formContact">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="./assets/img/Logos/LogoJm_2.svg" alt=""></a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../dist/index.html">Home</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../dist/acerca de mi.html">Acerca de mí</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../dist/conocimientos.html">Conocimientos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../dist/proyectos.html">Proyectos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../dist/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HEADER BACKGROUND DE PARTICULAS -->
+        <div id="particles-js">
+        </div>
+
+        <!-- <div class="header">
+            <header class="masthead text-white text-center">
+                <div id="header" class="container d-flex align-items-center flex-column">
+                    <h1 class="masthead-heading text-uppercase mb-0 pb-3">Contacto</h1>
+                </div>
+            </header>
+        </div> -->
+
+        <div id="container"></div>
+    <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }}</div>
+    <div class="contact-wrapper">
+        <div class="envelope {{ flipCard ? 'active' : '' }}">
+          <div class="back paper"></div>
+          <div class="content">
+            <div class="form-wrapper">
+              <form>
+                <div class="top-wrapper">
+                  <div class="input">
+                    <label>Nombre</label>
+                    <input type="text" name="name"/>
+                  </div>
+                  <!-- <div class="input">
+                    <label>Phone</label>
+                    <input type="text" name="phone"/>
+                  </div> -->
+                  <div class="input">
+                    <label>Email</label>
+                    <input type="text" name="_replyto"/>
+                  </div>
+                </div>
+                <div class="bottom-wrapper">
+                  <div class="input">
+                    <label>Asunto</label>
+                    <input type="text" name="_subject"/>
+                  </div>
+                  <div class="input">
+                    <label>Mensaje</label>
+                    <textarea rows="5" name="message"></textarea>
+                  </div>
+                  <div class="submit">
+                    <div class="submit-card" on-click="toggle('flipCard')">Enviar</div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="front paper"></div>
+        </div>
+      </div>
+    
+      <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script><script  src="./js/particula.js"></script>
+</body>
+</html>
