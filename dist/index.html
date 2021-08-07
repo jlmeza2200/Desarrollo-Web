@@ -6,21 +6,31 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Portfolio JM</title>
+        
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        
+        <!-- CSS CUSTOM -->
         <link href="./css/styles.css" rel="stylesheet" />
         <link href="../src/scss/estilos.css" rel="stylesheet" />
         <!-- APLICAR LINK A ESTILOS CSS UNA VEZ TERMINADO DE TRABAJAR CON SASS -->
         <!-- <link href="./css/custom.css" rel="stylesheet" /> --> 
+
     </head>
     <body id="page-top">
-        <!-- Navigation-->
+
+        <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION LOGO & NAV MENU 
+            _______________________________________________________________________________________________________________________-->
+
         <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top"><img src="./assets/img/Logos/LogoJm_2.svg" alt=""></a>
@@ -38,11 +48,15 @@
                 </div>
             </div>
         </nav>
-        <!-- HEADER BACKGROUND DE PARTICULAS -->
+
+        <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION HEADER 
+            _______________________________________________________________________________________________________________________-->
+
         <div id="particles-js">
         </div>
 
-        <!-- Masthead-->
         <div>
             <header class="masthead text-white text-center">
                 <div id="header" class="container d-flex align-items-center flex-column">
@@ -61,102 +75,99 @@
             </header>
         </div>
 
-          <!-- Sección Acerca de mí -->
+          <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION ACERCA DE MI 
+            _______________________________________________________________________________________________________________________-->
+
         <div class="container" id="acerca">
             <div class="row">
-              <div id="acerca" class="col-sm">
-                <h2 class="mayorIgual"> &lt acerca &gt </h2>
-                <div id="texto" class="info">
-                    <p class="pparrafo">Soy un desarrollador web front-end y trabajo con agencias de todo el mundo para crear sitios web interactivos  y de alto rendimiento que funcionen en todas las plataformas y dispositivos.</p>
-                    <p class="sparrafo">Mis sitios web están codificados principalmente a mano con HTML5, CSS3, SVG y JavaScript. Con un fuerte énfasis en la "mejora progresiva", busco formas creativas de ampliar los límites en cuanto al código del front-end del sitio web, sin comprometer la compatibilidad y el rendimiento del navegador.
-                    <p class="tparrafo"> En una búsqueda por mantenerme siempre actualizado, realizo cursos, leo libros y asisto a conferencias y reuniones.</p>
-                        <!-- Enlace a página Acerca de mí -->
-                    <div class="btnAcercaDeMi">
-                       <a href="../dist/acerca de mi.html">MÁS SOBRE MÍ</a>
+                <div id="acerca" class="col-sm">
+                    <h2 class="mayorIgual"> &lt acerca &gt </h2>
+                    <div id="texto" class="info">
+                        <p class="pparrafo">Soy un desarrollador web front-end y trabajo con agencias de todo el mundo para crear sitios web interactivos  y de alto rendimiento que funcionen en todas las plataformas y dispositivos.</p>
+                        <p class="sparrafo">Mis sitios web están codificados principalmente a mano con HTML5, CSS3, SVG y JavaScript. Con un fuerte énfasis en la "mejora progresiva", busco formas creativas de ampliar los límites en cuanto al código del front-end del sitio web, sin comprometer la compatibilidad y el rendimiento del navegador.
+                        <p class="tparrafo"> En una búsqueda por mantenerme siempre actualizado, realizo cursos, leo libros y asisto a conferencias y reuniones.</p>
+                            <!-- Enlace a página Acerca de mí -->
+                        <div class="btnAcercaDeMi">
+                           <a href="../dist/acerca de mi.html">MÁS SOBRE MÍ</a>
+                        </div>
+                    </div>
+                    <h2 class="mayorIgual"> &lt /acerca &gt </h2>
+                </div>
+          
+                <div id="" class="col-sm">
+                    <!-- Foto JM -->
+                    <div id="imagen">
+                        <img class="imagenJm" src="./assets/img/JM.png" alt="">
                     </div>
                 </div>
-                <h2 class="mayorIgual"> &lt /acerca &gt </h2>
-              </div>
-          
-            <div id="" class="col-sm">
-              <!-- Foto JM -->
-              <div id="imagen">
-                  <img class="imagenJm" src="./assets/img/JM.png" alt="">
-              </div>
-            </div>
            </div>
         </div>
 
-         <!-- FRASE 1 -->
-         <div class="frases text-center">
+         <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION FRASE 1 - "HAZ LO QUE AMAS, AMA LO QUE HACES" 
+            _______________________________________________________________________________________________________________________-->
+
+        <div class="frases text-center">
             <img id="fraseUno" src="./assets/img/frases/haz lo que amas.png" alt="">
         </div>
         
-          <!-- Sección SKILLS -->
-          <div class="container">  
-          <section class="resume-section" id="skills">
-            <h2 class="mayorIgual"> &lt skills &gt </h2>
-            <div class="info">
-                <div class="resume-section-content pt-3 pb-3" id="textoSkills">
-                    <h3 class="pb-3">Lenguajes de programación y herramientas</h3>
-                    <ul class="list-inline dev-icons">
-                        <!-- <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li> -->
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/html5.svg" alt="" width="55"></i></li> 
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/css-3.svg" alt="" width="55"></i></li> 
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/Js.svg" alt="" width="55"></i></li> 
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/bootstrap.svg" alt="" width="55"></i></li> 
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/react.svg" alt="" width="55"></i></li> 
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/github.svg" alt="" width="55"></i></li> 
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/sass.svg" alt="" width="55"></i></li> 
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/jquery.svg" alt="" width="55"></i></li> 
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/Node.js.svg" alt="" width="100"></i></li> 
-                        <li class="list-inline-item"><i><img src="./assets/img/Iconos/wordpress.svg" alt="" width="55"></i></li> 
-                    </ul>
-                    <h5>Workflow</h5>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
+          <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION SKILLS
+            _______________________________________________________________________________________________________________________-->
+
+        <div class="container">  
+            <section class="resume-section" id="skills">
+                <h2 class="mayorIgual"> &lt skills &gt </h2>
+                <div class="info">
+                    <div class="resume-section-content pt-3 pb-3" id="textoSkills">
+                        <h3 class="pb-3">Lenguajes de programación y herramientas</h3>
+                        <ul class="list-inline dev-icons">
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/html5.svg" alt="" width="55"></i></li> 
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/css-3.svg" alt="" width="55"></i></li> 
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/Js.svg" alt="" width="55"></i></li> 
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/bootstrap.svg" alt="" width="55"></i></li> 
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/react.svg" alt="" width="55"></i></li> 
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/github.svg" alt="" width="55"></i></li> 
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/sass.svg" alt="" width="55"></i></li> 
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/jquery.svg" alt="" width="55"></i></li> 
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/Node.js.svg" alt="" width="100"></i></li> 
+                            <li class="list-inline-item"><i><img src="./assets/img/Iconos/wordpress.svg" alt="" width="55"></i></li> 
+                        </ul>
+                        <h5>Workflow</h5>
+                        <ul class="fa-ul mb-0">
+                            <li> <span class="fa-li"><i class="fas fa-check"></i></span> Mobile-First, Responsive Design</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Cross Browser Testing & Debugging</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Cross Functional Teams</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Agile Development & Scrum</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <h2 class="mayorIgual"> &lt /skills &gt </h2>
-        </section>
+                <h2 class="mayorIgual"> &lt /skills &gt </h2>
+            </section>
         </div>
         
-        <!-- FRASE 2 -->
+        <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION FRASE 2 - "SIEMPRE POSITIVO, NUNCA NEGATIVO"
+            _______________________________________________________________________________________________________________________-->
+
         <div class="frases text-center">
             <img id="fraseDos" src="./assets/img/frases/siempre positivo.png" alt="">
         </div>
 
-        <!-- Sección Proyectos -->
+        <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION PROYECTOS
+            _______________________________________________________________________________________________________________________-->
+
         <div class="container">
             <h2 class="mayorIgualProject"> &lt proyectos &gt</h2>
             <div class="info" id="proyectosHome">
+                
                 <!-- Proyecto 1 -->
                 <div class="proyect1">
                     <h3>En el nombre del Litio </h3>
@@ -191,16 +202,25 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione at debitis totam libero magnam eum earum. Magnam officiis cumque mollitia molestias iure, vero voluptatum non dolorem doloremque quisquam sint enim.</p>
                     <a class="sitiosWeb" href="#">VER SITIO WEB</a>
                 </div>
+
             </div>
             <h2 class="mayorIgualProject"> &lt /proyectos &gt</h2>
         </div>
 
-        <!-- FRASE 3 -->
+        <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION FRASE 3 - "CODIGO ES POESÍA"
+            _______________________________________________________________________________________________________________________-->
+
         <div class="frases text-center">
             <img id="fraseTres" src="./assets/img/frases/codigo es poesia.png" alt="">
         </div>
 
-        <!-- Sección contacto -->
+        <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION CONTACTO
+            _______________________________________________________________________________________________________________________-->
+
         <div class="container" id="contacto">
             <h2 class="mayorIgual"> &lt contacto &gt </h2>
             <section class="page-section" id="contact">
@@ -267,28 +287,30 @@
             </section>  
                </form>
                <h2 class="mayorIgual"> &lt /contacto &gt </h2>
-            </div>
-       </div> 
-
-
-       <!-- SECCION FOOTER-->
-       <div id="footer" class="containter">
-            <footer class="text-center">
-            <div class="text-center text-white">
-                <div><small>Copyright &copy; JM 2021</small></div>
-            </div>
-            </footer>
         </div>
         
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+        <!-- _____________________________________________________________________________________________________________________
+            
+                                            SECCION FOOTER
+            _______________________________________________________________________________________________________________________-->   
+
+       <div id="footer" class="containter">
+            <footer class="text-center">
+                <div class="text-center text-white">
+                    <div><small>Copyright &copy; JM 2021</small></div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- _____________________________________________________________________________________________________________________
+            
+                                            LINK DE SCRIPTS
+            _______________________________________________________________________________________________________________________-->
+        
+        <!-- Nav menu JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <!-- Background JS-->
         <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script><script  src="./js/particula.js"></script>
     </body>
 </html>
