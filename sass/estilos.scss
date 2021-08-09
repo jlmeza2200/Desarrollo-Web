@@ -1,0 +1,974 @@
+@charset "UTF-8";
+/*_________________________________________________________________________________________________________________
+
+                                    ESTILOS PERSONALIZADOS
+
+__________________________________________________________________________________________________________________*/
+
+/*_________________________________________________________________________________________________________________
+
+                                    PAGINA HOME
+
+__________________________________________________________________________________________________________________*/
+
+/* ESTILOS PARA VERS. MOBILE */
+@media (max-width: 800px) {
+
+    body {
+      
+      margin-left: 0px;
+
+    }
+  }
+
+ /* TO DO: COLOR LA IMAGEN DE JM INVIRTIENDO EL ORDEN DE LAS COLUMNAS PARA POCISIONAR LA MISMA PRIMERA. */ 
+@media (max-width: 800px) {
+
+    .imagenJm {
+      
+      display:none;
+
+    }
+  }
+
+  @media (max-width: 800px) {
+
+    #proyectosHome {
+      
+      margin-left: 0px;
+
+    }
+  }
+  
+  
+
+
+
+
+/* ESTILOS NAV MENU */
+
+.primary-nav {
+	position: fixed;
+	z-index: 999;
+}
+
+.menu {
+	position: relative;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	
+}
+
+.open-panel {
+  border: none;
+  background-color:#fff;
+  padding: 0;
+}
+
+.hamburger {
+	background: #fff;
+	position: relative;
+	display: block;
+	text-align: center;
+	padding: 13px 0;
+	width: 50px;
+  height: 73px;
+	left: 0;
+  top: 0;
+	z-index: 1000;
+  cursor: pointer;
+}
+
+.hamburger:before {
+	content:"\2630"; /* hamburger icon */
+	display: block;
+  color: #000;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.openNav .hamburger:before {
+	content:"\2715"; /* close icon */
+	display: block;
+  color: #000;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.hamburger:hover:before {
+  color: #777;
+}
+
+.primary-nav .menu li {
+	position: relative;
+}
+
+.menu .icon {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	pointer-events: none;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.menu,
+.menu a,
+.menu a:visited {
+  color: #aaa;
+  text-decoration: none!important;
+	position: relative;
+}
+
+.menu a {
+  display: block;
+  white-space: nowrap;
+  padding: 1em;
+  font-size: 14px;
+}
+
+.menu a:hover {
+	color: #fff;
+}
+
+.menu {
+	margin-bottom: 3em;
+}
+
+.menu-dropdown li .icon {
+	color: #777;
+}
+
+.menu-dropdown li:hover .icon {
+	color: #fff;
+}
+
+.menu label {
+  margin-bottom: 0;
+  display: block;
+}
+
+.menu label:hover {
+  cursor: pointer;
+}
+
+.menu input[type="checkbox"] {
+  display: none;
+}
+
+input#menu[type="checkbox"] {
+  display: none;
+}
+
+.sub-menu-dropdown {
+	display: none;
+}
+
+.new-wrapper {
+	position: absolute;
+	left: 50px;
+  width: calc(100% - 50px);
+  transition: transform .45s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#menu:checked + ul.menu-dropdown {
+    
+		left: 0;
+    -webkit-animation: all .45s cubic-bezier(0.77, 0, 0.175, 1);
+            animation: all .45s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.sub-menu-checkbox:checked + ul.sub-menu-dropdown {
+    display: block!important;
+    -webkit-animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
+            animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+
+.openNav .new-wrapper {
+  position: absolute;
+  transform: translate3d(200px, 0, 0);
+  width: calc(100% - 150px);
+  transition: transform .45s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+
+.downarrow {
+  background: transparent;
+	position: absolute;
+	right: 50px;
+	top: 12px;
+  color: #777;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  display: block;
+}
+
+.downarrow:hover {
+  color: #fff;
+}
+
+.menu {
+	position: absolute;
+	display: block;
+	left: -200px;
+  top: 0;
+	width: 350px;
+  transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  background-color: #000;
+	z-index: 999;
+}
+
+.menu-dropdown {
+  top: 0;
+  overflow-y: auto;
+}
+
+.overflow-container {
+  position: relative;
+  height: calc(100vh - 73px)!important;
+  overflow-y: auto;
+  border-top: 73px solid #fff;
+  z-index: -1;
+  display:block;
+}
+
+.menu a.logotype {
+  position: absolute!important;
+  top: 11px;
+  left: 55px;
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #000;
+  font-size: 21px;
+  padding: 10px;
+}
+
+.menu a.logotype span {
+  font-weight: 400;
+}
+
+.menu a.logotype:hover {
+  color: #777;
+}
+
+.sub-menu-dropdown {
+	background-color: #333;
+}
+
+.menu:hover {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.openNav .menu:hover {
+	position: absolute;
+	left: -200px;
+	top: 73px;
+}
+
+.openNav .menu {
+  top: 73px;
+		transform: translate3d(200px, 0, 0);
+    transition: transform .45s cubic-bezier(0.77, 0, 0.175, 1);
+}
+	
+
+/* SECCION HEADER*/
+#header {
+  margin-top: -775px;
+  z-index: 1;
+  align-items: center;
+}
+
+#particles-js {
+  width: 100%;
+//   height: 769px;
+  height: 600px;
+  background: #000;
+  z-index: 0;
+}
+
+#acerca {
+
+    margin-top: -120px;
+
+}
+
+/* FRASES */
+.frases {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* ESTILOS APLICADO A TODOS LOS DIV QUE TIENEN CONTINDO | MARGIN-LEFT 35PX*/
+.info {
+  padding-top: 22px;
+  padding-bottom: 45px;
+  margin-left: 40px;
+}
+
+#fraseUno, #fraseDos, #fraseTres {
+  width: 650px;
+}
+
+footer {
+  padding-top: 150px;
+  padding-bottom: 15px;
+}
+
+a, ul {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+
+.header h2 {
+  padding-top: 40px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+}
+
+/*________________________________________________________________________________________________*/
+
+                            // ESTILOS SECCION "ACERCA DE MI"
+
+/*________________________________________________________________________________________________*/
+
+
+/* Título <Acerca> */
+#acerca h2.mayorIgual {
+  color: lime;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* Estilos al primer párrafo de sección "Acerca de mí" */
+p.pparrafo {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 37px;
+  margin: 0px 0px -4px;
+  padding: 0px 0px 7px;
+  font-size: 30px;
+  color: #FFF;
+}
+
+/* Estilos al segundo párrafo de sección "Acerca de mí" */
+p.sparrafo {
+  font-family: "open sans", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 21px;
+  line-height: 30px;
+  margin: 21px 0px;
+}
+
+/* Estilos al tercer párrafo de sección "Acerca de mí" */
+p.tparrafo {
+  font-family: "open sans", sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  margin: 21px 0px 0px;
+  padding-bottom: 45px;
+  color: #fff;
+}
+
+/* Estilos a los párrafos de la sección "Acerca de mí"  */
+/* Estilos al enlace "Más sobre mí" */
+.btnAcercaDeMi a {
+  color: lime;
+  font-size: 20px;
+  border: 1px solid lime;
+  padding: 10px;
+}
+
+/* Estilos aplicados al botón "Mas sobre mí" al hacer hover */
+.btnAcercaDeMi a:hover {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+/* Estilos aplicados al título <acerca>  */
+#texto .mayorIgual {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+/* Estilos aplicados a la imagen JM de la sección "Acerca de mi" */
+
+#imagen {
+
+  align-items:flex-end;
+
+}
+
+.imagenJm {
+  width: 422px;
+  margin-top: -57px;
+  border-radius: 50%;
+  
+}
+
+/*ESTILOS SECCION SKILLS*/
+#skills, h2, h3 {
+  color: #fff;
+}
+
+#skills h2.mayorIgual {
+  color: #ffe100;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#textoSkills h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 37px;
+  margin: 0px 0px -4px;
+  font-size: 30px;
+}
+
+#textoSkills h4 {
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+
+#textoSkills h5 {
+  padding-top: 20px;
+}
+
+/*********************************************************************************************************
+    
+    ESTILOS DE LA SECCIÓN "PROYECTOS"
+    
+    **********************************************************************************************************/
+/* Aplicamos el estilo display grid en la sección "Proyectos"  */
+// #proyectosHome {
+//   display: -ms-grid;
+//   display: grid;
+//   -ms-grid-columns: 85%;
+//       grid-template-columns: 85%;
+//   grid-row-gap: 45px;
+// }
+
+#proyectosHome {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-row-gap: 45px;
+}
+
+/* Título <proyectos> */
+h2.mayorIgualProject {
+  color: #f800a1;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* Estilos aplicados a las etiquetas p,h3,h4 del div de la sección "proyectos" */
+#proyectosHome p, h3 {
+  margin-left: 35px;
+}
+
+/* Estilos aplicados a las clases de todos los proyectos para crear el borde, espaciado interno y margen*/
+.proyect1, .proyect2, .proyect3, .proyect4, .proyect5 {
+  border: 2px solid #f800a1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 35px;
+}
+
+/* Estilos aplicados a los títulos h3 de cada proyecto; padding superior y fuente  */
+.proyect1 h3, .proyect2 h3, .proyect3 h3, .proyect4 h3, .proyect5 h3 {
+  padding-bottom: 30px;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Estilos aplicacios al */
+.proyect1 a, .proyect2 a, .proyect3 a, .proyect4 a, .proyect5 a {
+  padding-top: 30px;
+  color: #fff;
+  margin-left: 35px;
+}
+
+/* Estilos aplicacios al */
+.proyect1 p, .proyect2 p, .proyect3 p, .proyect4 p, .proyect5 p {
+  color: #fff;
+}
+
+/* Estilos aplicados a la clase que contiene el link para ver el sitio web de cada proyecto */
+.sitiosWeb {
+  margin-left: 25px;
+}
+
+.proyect1:hover, .proyect2:hover, .proyect3:hover, .proyect4:hover, .proyect5:hover {
+  background-color: #f800a1;
+}
+
+/*********************************************************************************************************
+    
+    ESTILOS DE LA SECCIÓN "CONTACTO"
+    
+    **********************************************************************************************************/
+
+/* Título <contacto> */
+
+#contacto {
+
+  padding-bottom: 69px;
+
+}
+
+#contacto h2.mayorIgual {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* Estilos aplicados al título <contacto> */
+#contacto .mayorIgual {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.formContact h3, p {
+  padding-bottom: 22px;
+  color: #fff;
+}
+
+.textContact {
+
+  margin-left: 69px;
+
+  font-size: 25px;
+
+}
+
+
+.textContact span {
+
+  color: #7490dd;
+
+}
+
+
+/*_________________________________________________________________________________________________________________
+
+                                    PAGINA ACERCA DE MÍ
+
+__________________________________________________________________________________________________________________*/
+.header {
+  padding-top: 200px;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+#aboutSec1 {
+  margin-top: -400px;
+}
+
+#aboutSec1, #aboutSec2 {
+  padding-top: 69px;
+}
+
+#aboutSec1 p {
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  font-size: 20px;
+  color: #2d9687;
+}
+
+#aboutSec2 p {
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  font-size: 20px;
+  /* color: rgb(233, 177, 113); */
+  color: #fff;
+}
+
+.imagenJm2 {
+  margin-top: 0px;
+  width: 580px;
+}
+
+#acercaParteDos p {
+  font-family: "open sans", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 150px;
+  padding-bottom: 45px;
+  color: #2d9687;
+  text-align: left;
+}
+
+/* Estilos aplicados al botón "Curriculum Vitae (PDF) de la página "Acerca de mí" */
+.cv {
+  color: #ffe100;
+  font-size: 19px;
+  margin-left: 35px;
+  background-color: #000;
+  padding: 25px;
+  border: 0;
+  border: 1px solid #ffe100;
+  margin-left: 150px;
+}
+
+#btnCv {
+  padding-top: 25px;
+}
+
+.imagenJm3 {
+  margin-top: 22px;
+  width: 470px;
+}
+
+/* Sección Acerca de mí  */
+#acercaDeMiUno {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-column-gap: 36px;
+}
+
+#acercaDeMiDos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#acercaDeMiDos p {
+  font-family: "open sans", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 45px;
+  color: #fff;
+  text-align: left;
+}
+
+/*_________________________________________________________________________________________________________________
+
+                                    PAGINA SKILLS
+
+__________________________________________________________________________________________________________________*/
+#skillsJm {
+  margin-top: -400px;
+}
+
+/*_________________________________________________________________________________________________________________
+
+                                    PAGINA PROYECTOS
+
+__________________________________________________________________________________________________________________*/
+#proyectos {
+  margin-top: -400px;
+}
+
+.textoProyecto h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 30px;
+  color: #fff;
+}
+
+.textoProyecto p {
+  padding-bottom: 0px;
+  padding-top: 15px;
+  font-family: "open sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+}
+
+.btnProject {
+  margin-left: 10px;
+  color: #f800a1;
+  font-size: 16px;
+  background-color: #000;
+  padding: 10px;
+  border: 0;
+  border: 1px solid #f800a1;
+}
+
+.btnProject:hover {
+  color: #000;
+  background-color: #f800a1;
+}
+
+/*_________________________________________________________________________________________________________________
+
+                                    PAGINA CONTACTO
+
+__________________________________________________________________________________________________________________*/
+.flip-card {
+  display: none;
+}
+
+.formContact {
+  font-family: sans-serif;
+}
+
+.contact-wrapper {
+//   position: absolute;
+//   top: 61%;
+//    -webkit-transform: translateY(-50%);
+//            transform: translateY(-50%);
+  width: 100%;
+}
+
+.flip-card {
+  border-radius: 0.5em;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+//    width: 5em;
+  padding: 0.5em;
+  border: 0.1em solid #fff;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.envelope {
+  position: relative;
+  display: block;
+   width: 30em;
+//   width: 69em;
+  height: 35em;
+  margin: 0 auto;
+}
+
+.envelope.active .content {
+  padding: 15em 2em 2em;
+}
+
+// .envelope.active .paper.front,
+// .envelope.active .paper.back {
+//   -webkit-animation-duration: 1.5s;
+//           animation-duration: 1.5s;
+//   -webkit-animation-direction: normal;
+//           animation-direction: normal;
+//   -webkit-animation-timing-function: ease-in-out;
+//           animation-timing-function: ease-in-out;
+//   -webkit-animation-fill-mode: forwards;
+//           animation-fill-mode: forwards;
+// }
+
+// .envelope.active .paper.front {
+//   -webkit-animation-name: envelope-front;
+//           animation-name: envelope-front;
+// }
+
+// .envelope.active .paper.back {
+//   -webkit-animation-name: envelope-back;
+//           animation-name: envelope-back;
+// }
+
+// .envelope.active .paper.back:before {
+//   -webkit-animation-duration: 0.5s;
+//           animation-duration: 0.5s;
+//   -webkit-animation-direction: normal;
+//           animation-direction: normal;
+//   -webkit-animation-timing-function: ease-in-out;
+//           animation-timing-function: ease-in-out;
+//   -webkit-animation-fill-mode: forwards;
+//           animation-fill-mode: forwards;
+//   -webkit-animation-delay: 1.25s;
+//           animation-delay: 1.25s;
+//   -webkit-animation-name: envelope-back-before;
+//           animation-name: envelope-back-before;
+// }
+
+// .envelope.active .bottom-wrapper {
+//   -webkit-transform: rotateX(180deg);
+//           transform: rotateX(180deg);
+// }
+
+.envelope.active .bottom-wrapper:after {
+  z-index: 0;
+  opacity: 1;
+}
+
+.envelope .content {
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  z-index: 9;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.envelope .top-wrapper,
+.envelope .bottom-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* background: #03a9f5; */
+  background: linear-gradient(45deg, #BB1881, #F88B50);
+  color: #fff;
+}
+
+.envelope .top-wrapper {
+  padding: 2em 2em 0;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.envelope .bottom-wrapper {
+  padding: 0 2em 2em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+.envelope .bottom-wrapper:after {
+  position: absolute;
+  content: '';
+  display: block;
+  opacity: 0;
+  background: #03a9f5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.envelope form label {
+  display: block;
+  padding-bottom: 0.5em;
+}
+
+.envelope form input,
+.envelope form textarea {
+  width: 100%;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.envelope form input {
+  border-width: 0 0 0.1em;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.envelope form textarea {
+  border: 0.1em solid #fff;
+  border-radius: 0.25em;
+}
+
+.envelope form .submit-card {
+  background: #fff;
+  color: #222;
+  text-align: center;
+  padding: 0.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  width: 100%;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.envelope form .input {
+  padding-bottom: 1em;
+}
+
+.envelope .paper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  overflow: hidden;
+}
+
+.envelope .paper.back {
+  top: 0;
+}
+
+.envelope .paper.back:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: -1px;
+  border-style: solid;
+  border-width: 0 15em 10em 15em;
+  border-color: transparent transparent #d3d3d3 transparent;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  z-index: 0;
+}
+
+.envelope .paper.back:after {
+  content: '';
+  display: block;
+  background-color: #d3d3d3;
+  width: 30em;
+  height: 20em;
+}
+
+.envelope .paper.front {
+  top: 10em;
+  -webkit-box-shadow: 0.1em 0.5em 0.5em rgba(0, 0, 0, 0.25);
+          box-shadow: 0.1em 0.5em 0.5em rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+
+.envelope .paper.front:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10em 15em 0 15em;
+  border-color: transparent #fff;
+}
+
+.envelope .paper.front:after {
+  content: '';
+  display: block;
+  width: 30em;
+  height: 10em;
+  background: #fff;
+  margin-top: -1px;
+}
