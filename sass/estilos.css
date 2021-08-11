@@ -16,6 +16,16 @@ ________________________________________________________________________________
   }
 }
 
+/* Scroll Personalizado */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #BB1881, #F88B50);
+  border-radius: 5px;
+}
+
 /* TO DO: 
 1. LA IMAGEN DE JM INVIRTIENDO EL ORDEN DE LAS COLUMNAS PARA POCISIONAR LA MISMA PRIMERA. 
 2. COLOCAR MENOS PX EN LAS IMG. DE LAS FRASES PARA RESPONSIVE.
@@ -74,13 +84,14 @@ ________________________________________________________________________________
   padding-bottom: 100px;
 }
 
-/* ESTILOS APLICADO A TODOS LOS DIV QUE TIENEN CONTINDO | MARGIN-LEFT 35PX*/
+/* ESTILOS APLICADO A TODOS LOS DIV QUE TIENEN CONTINDO DENTRO DE <> | $padding-top, $padding-bottom, $margin-left*/
 .info {
   padding-top: 22px;
-  padding-bottom: 44px;
+  padding-bottom: 46px;
   margin-left: 40px;
 }
 
+/* ESTILOS APLICADOS A LAS IMAGENES CON FRASES */
 #fraseUno, #fraseDos, #fraseTres {
   width: 650px;
 }
@@ -127,6 +138,10 @@ p.sparrafo, p.tparrafo {
 }
 
 /* Estilos al enlace "Más sobre mí" */
+.btnAcercaDeMi {
+  padding-top: 22px;
+}
+
 .btnAcercaDeMi a {
   color: #fff;
   font-size: 20px;
@@ -134,7 +149,6 @@ p.sparrafo, p.tparrafo {
   padding: 10px;
 }
 
-/* Estilos aplicados al botón "Mas sobre mí" al hacer hover */
 .btnAcercaDeMi a:hover {
   color: #000;
   background: lime;
@@ -147,11 +161,11 @@ p.sparrafo, p.tparrafo {
   border-radius: 50%;
 }
 
-/*ESTILOS SECCION SKILLS*/
-#skills, h2, h3 {
-  color: #fff;
-}
-
+/*********************************************************************************************************
+    
+    ESTILOS DE LA SECCIÓN "SKILLS"
+    
+**********************************************************************************************************/
 /* Estilos aplicados al Título <skills> */
 #skills h2.mayorIgual {
   color: #ffe100;
@@ -159,13 +173,16 @@ p.sparrafo, p.tparrafo {
   font-weight: 300;
 }
 
+/* Estilos aplicados a las etiquetas h3, h4 y h5 */
 #textoSkills h3 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono" monospace;
   font-weight: 300;
   font-style: italic;
   line-height: 37px;
   margin: 0px 0px -4px;
+  padding: 0;
   font-size: 30px;
+  color: #fff;
 }
 
 #textoSkills h4 {
@@ -175,6 +192,7 @@ p.sparrafo, p.tparrafo {
 
 #textoSkills h5 {
   padding-top: 20px;
+  color: #fff;
 }
 
 /*********************************************************************************************************
@@ -182,15 +200,6 @@ p.sparrafo, p.tparrafo {
     ESTILOS DE LA SECCIÓN "PROYECTOS"
     
 **********************************************************************************************************/
-/* Estilos aplicados a las clases de todos los proyectos para crear el borde, espaciado interno y margen*/
-.proyect {
-  padding-top: 45px;
-  padding-bottom: 45px;
-  border: 2px solid #f800a1;
-  padding-top: 20px;
-  margin-bottom: 20px;
-}
-
 /* Estilos aplicados al Título <proyectos> */
 h2.mayorIgualProject {
   color: #f800a1;
@@ -198,18 +207,35 @@ h2.mayorIgualProject {
   font-weight: 300;
 }
 
-/* Estilos aplicados a las etiquetas p,h3,h4 del div de la sección "proyectos" */
-#proyectosHome p, h3 {
-  margin-left: 35px;
+/* Estilos aplicados a las clases de todos los proyectos para crear el borde, espaciado interno y margen*/
+.proyect {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border: 2px solid #f800a1;
+  margin-bottom: 20px;
 }
 
-/* Estilos aplicacios al */
+/* Estilos aplicados a las etiquetas p,h3,h4 del div de la sección "proyectos" */
+#proyectosHome p, h3 {
+  color: #fff;
+  margin-left: 35px;
+  padding-bottom: 15px;
+}
+
+/* Estilos aplicacios al enlace "ver sitio web" y al fondo cuando se hace hover */
+.proyect:hover {
+  background: linear-gradient(45deg, #BB1881, #F88B50);
+  border: 2px solid #000;
+}
+
 .proyect a {
   margin-left: 35px;
 }
 
-.proyect:hover {
-  background-color: #f800a1;
+.proyect .sitioWeb:hover {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /*********************************************************************************************************
@@ -217,11 +243,6 @@ h2.mayorIgualProject {
     ESTILOS DE LA SECCIÓN "CONTACTO"
     
 **********************************************************************************************************/
-/* Título <contacto> */
-#contacto {
-  padding-bottom: 69px;
-}
-
 /* Estilos aplicados al Título <contacto> */
 #contacto h2.mayorIgual {
   color: #fff;
@@ -241,12 +262,17 @@ h2.mayorIgualProject {
 }
 
 .textContact span {
-  color: #7490dd;
+  color: #19b6ff;
+  font-style: italic;
 }
 
 #formContactHome {
   margin-top: 69px;
   margin-right: 150PX;
+}
+
+#mayorIgualDownContact {
+  padding-top: 169px;
 }
 
 /*_________________________________________________________________________________________________________________
@@ -272,30 +298,29 @@ ________________________________________________________________________________
   font-family: 'Roboto Mono', monospace;
   font-style: italic;
   font-size: 20px;
-  color: #2d9687;
-}
-
-#aboutSec2 p {
-  font-family: 'Roboto Mono', monospace;
-  font-style: italic;
-  font-size: 20px;
-  /* color: rgb(233, 177, 113); */
   color: #fff;
 }
 
-.imagenJm2 {
-  margin-top: 0px;
+#textJm span {
+  font-size: 50px;
+  font-weight: bold;
+  color: #85fd15;
+}
+
+#aboutSec2 p {
+  font-family: "open sans", sans-serif;
+  font-style: normal;
+  font-size: 23px;
+  color: #fff;
+}
+
+#imagenJmUno {
+  margin-top: 45px;
   width: 580px;
 }
 
-#acercaParteDos p {
-  font-family: "open sans", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  margin-left: 150px;
-  padding-bottom: 45px;
-  color: #2d9687;
-  text-align: left;
+#imagenJmDos {
+  width: 580px;
 }
 
 /* Estilos aplicados al botón "Curriculum Vitae (PDF) de la página "Acerca de mí" */
