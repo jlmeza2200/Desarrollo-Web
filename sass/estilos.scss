@@ -87,9 +87,43 @@ ________________________________________________________________________________
   }
 }
 
+// ESTILOS RESPONSIVE APLICADOS A LA PÁGINA PROYECTOS
+@media (max-width: 767px) {
+
+  .proyectInfo {
+
+    & h2, p {text-align: center};
+    
+
+  }
+}
+  
+  @media (max-width: 767px) {
+
+  .proyectInfo, .btnWeb, .ContainerImgProyect {
+
+    display: flex;
+    justify-content: center;
+  
+  }
+}
+  
+  @media (max-width: 767px) {
+
+  .imgProyect {
+
+    width:400px;
+    align-items: center;
+
+}
+}
+
+
+
+// ESTILOS APLICADOS AL DIV QUE CONTIENE EL FONDO DE LAS PARTICULAS ANIMADAS.
 #particles-js {
   width: 100%;
-  height: 600px;
+  height: 100vh;
   background: #000;
   z-index: 0;
 }
@@ -114,7 +148,8 @@ ________________________________________________________________________________
 
 /* SECCION HEADER*/
 #header {
-  margin-top: -775px;
+  // margin-top: -775px;
+  margin-top: -869px;
   z-index: 1;
   align-items: center;
 }
@@ -216,7 +251,7 @@ p.pparrafo {
 }
 
 /* Estilos aplicados a las etiquetas h3, h4 y h5 */
-#textoSkills {
+.textoSkills {
 
   h3 { @include fontStyle('Roboto Mono' monospace, 300, italic, 37px, 0px 0px -4px, 0, 30px, #fff);
   }
@@ -248,20 +283,6 @@ h2.mayorIgualProject {
 }
 
 
-/* Estilos aplicados a las clases de todos los proyectos para crear el borde, espaciado interno y margen*/
-.proyect {
-
-  padding-top: 45px;
-
-  padding-bottom: 45px;
-
-  border: 2px solid #f800a1;
-
-  margin-bottom: 20px;
-
-}
-
-
 /* Estilos aplicados a las etiquetas p,h3,h4 del div de la sección "proyectos" */
 #proyectosHome p, h3 {
 
@@ -274,8 +295,16 @@ h2.mayorIgualProject {
 }
 
 
-/* Estilos aplicacios al enlace "ver sitio web" y al fondo cuando se hace hover */
+/* Estilos aplicados a: borde, espaciado interno y margen, enlace "ver sitio web" y al fondo cuando se hace hover */
  .proyect {
+
+  padding-top: 45px;
+
+  padding-bottom: 45px;
+
+  border: 2px solid #f800a1;
+
+  margin-bottom: 20px;
 
   &:hover { 
     background: linear-gradient(45deg, #BB1881, #F88B50);
@@ -290,7 +319,6 @@ h2.mayorIgualProject {
     font-weight: bold;
     font-size: 20px;
   }
-
 }
 
 
@@ -338,6 +366,12 @@ h2.mayorIgualProject {
 
 }
 
+#socialNetwork {
+
+  margin-top: -150px;
+
+
+}
 
 /*_________________________________________________________________________________________________________________
 
@@ -351,55 +385,51 @@ ________________________________________________________________________________
   z-index: 1;
 }
 
+
 #aboutSec1 {
   margin-top: -400px;
-}
-
-#aboutSec1, #aboutSec2 {
   padding-top: 69px;
+
+  p {
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-size: 20px;
+    color: #fff;
+
+  }
 }
 
-#aboutSec1 p {
-  font-family: 'Roboto Mono', monospace;
-  font-style: italic;
-  font-size: 20px;
+
+#aboutSec2 {
+  padding-top: 69px;
+
+  p {
+  font-family: "open sans", sans-serif;
+  font-style: normal;
+  font-size: 23px;
   color: #fff;
 }
+}
+
 
 #textJm span {
-
   font-size: 50px;
   font-weight: bold;
   color: #85fd15;
 
 }
 
-#aboutSec2 p {
-  font-family: "open sans", sans-serif;
-  font-style: normal;
-  font-size: 23px;
-  color: #fff;
-}
 
 #imagenJmUno {
   margin-top: 45px;
   width: 580px;
 }
 
+
 #imagenJmDos {
-
   width: 580px;
-
 }
 
-// #acercaParteDos p {
-//   font-family: "open sans", sans-serif;
-//   font-size: 20px;
-//   line-height: 30px;
-//   padding-bottom: 45px;
-//   color: #fff;
-//   text-align: left;
-// }
 
 /* Estilos aplicados al botón "Curriculum Vitae (PDF) de la página "Acerca de mí" */
 .cv {
@@ -411,41 +441,21 @@ ________________________________________________________________________________
   border: 0;
   border: 1px solid #ffe100;
   margin-left: 150px;
+
+  &:hover {
+
+    background: #ffe100;
+    color: #000;
+    width: 280px;
+  }
 }
 
 #btnCv {
   padding-top: 25px;
 }
 
-.imagenJm3 {
-  margin-top: 22px;
-  width: 470px;
-}
 
-/* Sección Acerca de mí  */
-#acercaDeMiUno {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  grid-column-gap: 36px;
-}
 
-#acercaDeMiDos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-}
-
-#acercaDeMiDos p {
-  font-family: "open sans", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  padding-bottom: 45px;
-  color: #fff;
-  text-align: left;
-}
 
 /*_________________________________________________________________________________________________________________
 
@@ -457,34 +467,44 @@ ________________________________________________________________________________
   margin-top: -400px;
 }
 
+#textoSkills h4 {
+
+  color: #fff;
+
+}
+
 /*_________________________________________________________________________________________________________________
 
                                     PAGINA PROYECTOS
 
 __________________________________________________________________________________________________________________*/
 
-#proyectos {
+#projectPage {
   margin-top: -400px;
 }
 
-.textoProyecto h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 300;
-  font-size: 30px;
-  color: #fff;
-}
 
-.textoProyecto p {
-  padding-bottom: 0px;
-  padding-top: 15px;
-  font-family: "open sans", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  color: #fff;
+.titleProject h2 {
+
+  color: red;
+
 }
+  .textoProyecto h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+  }
+
+ .titleProject {
+   font-family: "open sans", sans-serif;
+   font-weight: bold;
+   font-size: 35px;
+   color: #fff;
+ }
 
 .btnProject {
-  margin-left: 10px;
+  // margin-left: 10px;
   color: #f800a1;
   font-size: 16px;
   background-color: #000;
@@ -499,9 +519,46 @@ ________________________________________________________________________________
   font-weight: bold;
 }
 
+.imgProyect {
+
+  margin-top: -55px;
+
+}
+
+.proyectInfo {
+
+  padding-bottom: 100px;
+
+}
+
+//ESTILO ANIMACIÓN A LAS IMAGENES DE LOS PROYECTOS
+.imgProyect {
+
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+  
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+}
+
 /*_________________________________________________________________________________________________________________
 
                                     PAGINA CONTACTO
 
 __________________________________________________________________________________________________________________*/
 
+#containerForm {
+
+  margin-top: -345px;
+
+}
