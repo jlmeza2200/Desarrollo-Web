@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Contrata mis servicios de diseño y desarrollo web front-end."/>
+    <meta name="author" content="" />
+    <title>Contacto</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./img/logos/logojm.svg"/>
+    
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,500,700" rel="stylesheet"><link>
+    
+    <!-- CSS BOOTSTRAP -->
+    <link href="./bootstrap-5.0.0-beta3-dist/css/bootstrap.css" rel="stylesheet" />
+    
+    <!-- CSS Nav menu  -->
+    <link rel="stylesheet" href="./css/nav menu.css">
+    
+    <!-- CSS Formulario de contacto  -->
+    <link rel="stylesheet" href="./css/formulario.css">
+
+    <!-- CSS CUSTOM -->
+    <!-- TODO. UNA VEZ TERMINADO EL PROYECTO, COLOCAR EL ARCHIVO estilos.css QUE SE ENCUENTRA EN LA CARPETA SASS, EN ./ -->
+    <link href="./sass/estilos.css" rel="stylesheet" />
+
+  </head>
+  <body>
+
+<!--____________________________________________________________________________________________________
+            
+                                            SECCION LOGO & NAV MENU 
+ _____________________________________________________________________________________________________-->
+    
+    <div class="nav-trigger js_navbar">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-menu">
+      <ul>
+			  <a href="./index.html"><li><h2 class="mt">Home</h2><i>Go to</i></li> <img class="logoJM" src="./img/logos/logojm.svg" alt=""></a>
+        <a href="./acerca de mi.html"><li><h2 class="mb">Acerca de</h2><i>mí</i></li></a>
+        <a href="./habilidades.html"><li><h2 class="mt">Habilidades</h2><i>Mis</i></li></a>
+        <a href="./proyectos.html"><li><h2 class="mt">Proyectos</h2><i>Mis</i></li></a>
+        <a href="./contacto.html"><li><h2 class="mb">Contact</h2><i>Me</i></li></a>
+      </ul>
+    </div>
+
+<!-- _________________________________________________________________________________________________
+                    
+                                      SECCION HEADER 
+______________________________________________________________________________________________________-->
+
+    <div id="particles-js">
+    </div>
+    <div class="header">
+      <header class="masthead text-white text-center">
+        <div id="header" class="container d-flex align-items-center flex-column">
+            <h1 class="masthead-heading text-uppercase mb-0 pb-3">CONTACTO.</h1>
+        </div>
+      </header>
+    </div>
+
+<!--__________________________________________________________________________________________________
+                    
+                                      SECCION FORMULARIO DE CONTACTO 
+___________________________________________________________________________________________________-->   
+    <div id="containerForm" class="container">
+      <div class="">
+        <div id="" class="info">
+          <p class="textContact">Siempre estoy preparado para nuevos desafíos y las oportunidades internacionales. Contáctame a través del siguiente formulario o escríbeme a <span>info@jonatanmeza.com</span></p>
+          <!-- REDES SOCIALES -->
+          <div id="socialNetwork">
+              <ul class="list-inline dev-icons pt-3">
+                  <li class="list-inline-item"><i><img src="./img/redes sociales/facebook.svg" alt="Icono de html5" width="40"></i></li> 
+                  <li class="list-inline-item"><i><img src="./img/redes sociales/instagram.svg" alt="Icono de css3" width="40"></i></li> 
+                  <li class="list-inline-item"><i><img src="./img/redes sociales/twitter.svg" alt="icono de JavaScript" width="40"></i></li> 
+                  <li class="list-inline-item"><i><img src="./img/redes sociales/github.svg" alt="icono de bootstrap-5" width="40"></i></li> 
+              </ul>
+          </div>
+      </div>
+      </div>
+  
+      <div id=""></div>
+      <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }</div>
+      <div class="contact-wrapper">
+          <div class="envelope {{ flipCard ? 'active' : '' }}">
+            <div class="back paper"></div>
+            <div class="content">
+              <div class="form-wrapper">
+                <form>
+                  <div class="top-wrapper">
+                    <div class="input">
+                      <label>Nombre</label>
+                      <input type="text" name="name"/>
+                    </div>
+                    <div class="input">
+                      <label>Email</label>
+                      <input type="text" name="_replyto"/>
+                    </div>
+                  </div>
+                  <div class="bottom-wrapper">
+                    <div class="input">
+                      <label>Asunto</label>
+                      <input type="text" name="_subject"/>
+                    </div>
+                    <div class="input">
+                      <label>Mensaje</label>
+                      <textarea rows="5" name="message"></textarea>
+                    </div>
+                    <div class="submit">
+                      <div class="submit-card" on-click="toggle('flipCard')">Enviar</div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="front paper"></div>
+          </div>
+      </div>
+    </div>  
+    
+
+<!--____________________________________________________________________________________________________
+                
+                                        SECCION FOOTER 
+_____________________________________________________________________________________________________-->
+
+    <div class="containter">
+      <footer class="text-center">
+        <div class="text-center text-white">
+          <div><small>Copyright &copy; JM 2021</small></div>
+        </div>
+      </footer>
+    </div>
+
+<!--_____________________________________________________________________________________________________
+        
+                                        LINKS DE SCRIPTS
+______________________________________________________________________________________________________-->
+    
+    <!-- Nav menu JS-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./js/nav menu.js"></script>
+
+    <!-- Background JS-->
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script><script  src="./js/particula.js"></script> 
+</body>
+</html>

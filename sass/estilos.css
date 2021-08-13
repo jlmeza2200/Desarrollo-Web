@@ -1,0 +1,478 @@
+@charset "UTF-8";
+/*______________________________________________________________________________________________________
+
+                                    ESTILOS PERSONALIZADOS
+
+______________________________________________________________________________________________________*/
+/*______________________________________________________________________________________________________
+
+                                    ESTILOS GLOBALES & RESPONSIVE
+
+______________________________________________________________________________________________________*/
+/* ESTILOS PARA VERS. MOBILE */
+@media (max-width: 800px) {
+  body {
+    margin-left: 0px;
+  }
+}
+
+/* Scroll Personalizado */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #BB1881, #F88B50);
+  border-radius: 5px;
+}
+
+/* TO DO: 
+1. LA IMAGEN DE JM INVIRTIENDO EL ORDEN DE LAS COLUMNAS PARA POCISIONAR LA MISMA PRIMERA. 
+2. COLOCAR MENOS PX EN LAS IMG. DE LAS FRASES PARA RESPONSIVE.
+*/
+@media (max-width: 800px) {
+  .imagenJm, #fraseUno, #fraseDos, #fraseTres {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #proyectosHome {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .proyectInfo h2, .proyectInfo p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .proyectInfo, .btnWeb, .ContainerImgProyect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .imgProyect {
+    width: 400px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: 0;
+}
+
+footer {
+  padding-top: 150px;
+  padding-bottom: 15px;
+}
+
+a, ul {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+
+/*______________________________________________________________________________________________________
+
+                                    PAGINA HOME
+
+______________________________________________________________________________________________________*/
+/* SECCION HEADER*/
+#header {
+  margin-top: -869px;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#acerca {
+  margin-top: -120px;
+}
+
+/* FRASES */
+.frases {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* ESTILOS APLICADO A TODOS LOS DIV QUE TIENEN CONTINDO DENTRO DE <> | $padding-top, $padding-bottom, $margin-left*/
+.info {
+  padding-top: 22px;
+  padding-bottom: 46px;
+  margin-left: 40px;
+}
+
+/* ESTILOS APLICADOS A LAS IMAGENES CON FRASES */
+#fraseUno, #fraseDos, #fraseTres {
+  width: 650px;
+}
+
+.header h2 {
+  padding-top: 40px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+}
+
+/*********************************************************************************************************
+    
+    ESTILOS DE LA SECCIÓN "ACERCA DE MI"
+    
+**********************************************************************************************************/
+#acerca h2.mayorIgual {
+  color: lime;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* Estilos al primer párrafo de sección "Acerca de mí" */
+p.pparrafo {
+  font-family: "Roboto Mono" monospace;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 37px;
+  margin: 0px 0px -4px;
+  padding: 0px 0px 7px;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Estilos al segundo y tercer párrafo de sección "Acerca de mí" */
+p.sparrafo, p.tparrafo {
+  font-family: "open sans" sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 30px;
+  margin: 0;
+  padding: 21px 0;
+  font-size: 21px;
+  color: #fff;
+}
+
+/* Estilos al enlace "Más sobre mí" */
+.btnAcercaDeMi {
+  padding-top: 22px;
+}
+
+.btnAcercaDeMi a {
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+.btnAcercaDeMi a:hover {
+  color: #000;
+  background: lime;
+  border: 1px solid lime;
+}
+
+.imagenJm {
+  width: 422px;
+  margin-top: -57px;
+  border-radius: 50%;
+}
+
+/*********************************************************************************************************
+    
+    ESTILOS DE LA SECCIÓN "SKILLS"
+    
+**********************************************************************************************************/
+/* Estilos aplicados al Título <skills> */
+#skills h2.mayorIgual {
+  color: #ffe100;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* Estilos aplicados a las etiquetas h3, h4 y h5 */
+.textoSkills h3 {
+  font-family: "Roboto Mono" monospace;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 37px;
+  margin: 0px 0px -4px;
+  padding: 0;
+  font-size: 30px;
+  color: #fff;
+}
+
+.textoSkills h4 {
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+
+.textoSkills h5 {
+  padding-top: 20px;
+  color: #fff;
+}
+
+/*********************************************************************************************************
+    
+    ESTILOS DE LA SECCIÓN "PROYECTOS"
+    
+**********************************************************************************************************/
+/* Estilos aplicados al Título <proyectos> */
+h2.mayorIgualProject {
+  color: #f800a1;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* Estilos aplicados a las etiquetas p,h3,h4 del div de la sección "proyectos" */
+#proyectosHome p, h3 {
+  color: #fff;
+  margin-left: 35px;
+  padding-bottom: 15px;
+}
+
+/* Estilos aplicados a: borde, espaciado interno y margen, enlace "ver sitio web" y al fondo cuando se hace hover */
+.proyect {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border: 2px solid #f800a1;
+  margin-bottom: 20px;
+}
+
+.proyect:hover {
+  background: linear-gradient(45deg, #BB1881, #F88B50);
+  border: 2px solid #000;
+}
+
+.proyect a {
+  margin-left: 35px;
+}
+
+.proyect .sitioWeb:hover {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*********************************************************************************************************
+    
+    ESTILOS DE LA SECCIÓN "CONTACTO"
+    
+**********************************************************************************************************/
+/* Estilos aplicados al Título <contacto> */
+#contacto h2.mayorIgual {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.formContact h3, p {
+  padding-bottom: 22px;
+  color: #fff;
+}
+
+.textContact {
+  font-size: 25px;
+  padding-top: 22px;
+  padding-bottom: 149px;
+}
+
+.textContact span {
+  color: #19b6ff;
+  font-style: italic;
+}
+
+#formContactHome {
+  margin-top: 69px;
+  margin-right: 150PX;
+}
+
+#mayorIgualDownContact {
+  padding-top: 169px;
+}
+
+#socialNetwork {
+  margin-top: -150px;
+}
+
+/*_________________________________________________________________________________________________________________
+
+                                    PAGINA ACERCA DE MÍ
+
+__________________________________________________________________________________________________________________*/
+.header {
+  padding-top: 200px;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+#aboutSec1 {
+  margin-top: -400px;
+  padding-top: 69px;
+}
+
+#aboutSec1 p {
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  font-size: 20px;
+  color: #fff;
+}
+
+#aboutSec2 {
+  padding-top: 69px;
+}
+
+#aboutSec2 p {
+  font-family: "open sans", sans-serif;
+  font-style: normal;
+  font-size: 23px;
+  color: #fff;
+}
+
+#textJm span {
+  font-size: 50px;
+  font-weight: bold;
+  color: #85fd15;
+}
+
+#imagenJmUno {
+  margin-top: 45px;
+  width: 580px;
+}
+
+#imagenJmDos {
+  width: 580px;
+}
+
+/* Estilos aplicados al botón "Curriculum Vitae (PDF) de la página "Acerca de mí" */
+.cv {
+  color: #ffe100;
+  font-size: 19px;
+  margin-left: 35px;
+  background-color: #000;
+  padding: 25px;
+  border: 0;
+  border: 1px solid #ffe100;
+  margin-left: 150px;
+}
+
+.cv:hover {
+  background: #ffe100;
+  color: #000;
+  width: 280px;
+}
+
+#btnCv {
+  padding-top: 25px;
+}
+
+/*_________________________________________________________________________________________________________________
+
+                                    PAGINA SKILLS
+
+__________________________________________________________________________________________________________________*/
+#skillsJm {
+  margin-top: -400px;
+}
+
+#textoSkills h4 {
+  color: #fff;
+}
+
+/*_________________________________________________________________________________________________________________
+
+                                    PAGINA PROYECTOS
+
+__________________________________________________________________________________________________________________*/
+#projectPage {
+  margin-top: -400px;
+}
+
+.titleProject h2 {
+  color: red;
+}
+
+.textoProyecto h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 30px;
+  color: #fff;
+}
+
+.titleProject {
+  font-family: "open sans", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: #fff;
+}
+
+.btnProject {
+  color: #f800a1;
+  font-size: 16px;
+  background-color: #000;
+  padding: 10px;
+  border: 0;
+  border: 1px solid #f800a1;
+}
+
+.btnProject:hover {
+  color: #6ba6d6;
+  background-color: #f800a1;
+  font-weight: bold;
+}
+
+.imgProyect {
+  margin-top: -55px;
+}
+
+.proyectInfo {
+  padding-bottom: 100px;
+}
+
+.imgProyect {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+/*_________________________________________________________________________________________________________________
+
+                                    PAGINA CONTACTO
+
+__________________________________________________________________________________________________________________*/
+#containerForm {
+  margin-top: -345px;
+}
+/*# sourceMappingURL=estilos.css.map */
