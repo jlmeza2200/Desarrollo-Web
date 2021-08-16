@@ -43,49 +43,79 @@ ________________________________________________________________________________
 
 }
 
-/* ESTILOS PARA VERS. MOBILE */
-@media (max-width: 800px) {
-
-  body {
-    
-    margin-left: 0px;
-
-  }
-}
-
 /* Scroll Personalizado */
 
 ::-webkit-scrollbar {
-	width: 12px;
+	  width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, #BB1881, #F88B50);
-	border-radius: 5px;
+	  border-radius: 5px;
 }
 
 
-/* TO DO: 
-1. LA IMAGEN DE JM INVIRTIENDO EL ORDEN DE LAS COLUMNAS PARA POCISIONAR LA MISMA PRIMERA. 
-2. COLOCAR MENOS PX EN LAS IMG. DE LAS FRASES PARA RESPONSIVE.
-*/ 
 @media (max-width: 800px) {
 
-  .imagenJm, #fraseUno, #fraseDos, #fraseTres {
+  #fraseUno, #fraseDos, #fraseTres {
     
-    display:none;
+    max-width: 350px;
 
   }
 }
 
-@media (max-width: 800px) {
 
-  #proyectosHome {
+ @media (max-width: 800px) {
+
+   #proyectosHome, .info {
     
-    margin-left: 0px;
+     margin-left: 0px;
+   }
+ }
 
+
+  @media (max-width: 800px) {
+ 
+   .imagenJm {
+     width: 150px;
+     margin-top: 0px;
+     border-radius: 50%;
+    
+   }
+ }
+
+ @media (max-width: 991px) {
+ 
+  #acercaDeMiHome {
+    
+    padding-top: 69px;
+    display: flex;
+    flex-direction: column-reverse;
+   
   }
 }
+
+@media (max-width: 1199px) {
+ 
+  #aboutSec2 {
+    
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+}
+
+
+@media (max-width: 1199px) {
+ 
+  .cv {
+    
+    position: absolute;
+    margin-top: 600px;
+    
+  }
+}
+
 
 // ESTILOS RESPONSIVE APLICADOS A LA PÁGINA PROYECTOS
 @media (max-width: 767px) {
@@ -154,11 +184,6 @@ ________________________________________________________________________________
   align-items: center;
 }
   
-#acerca {
-
-    margin-top: -120px;
-
-}
 
 /* FRASES */
 .frases {
@@ -169,13 +194,13 @@ ________________________________________________________________________________
 /* ESTILOS APLICADO A TODOS LOS DIV QUE TIENEN CONTINDO DENTRO DE <> | $padding-top, $padding-bottom, $margin-left*/
  .info {
   
-  @include infoentreMayorIgual(22px, 46px, 40px)
+  @include infoentreMayorIgual(22px, 46px, 0px)
   
 }
 
 /* ESTILOS APLICADOS A LAS IMAGENES CON FRASES */
 #fraseUno, #fraseDos, #fraseTres {
-  width: 650px;
+  // width: 650px;
 }
 
 .header h2 {
@@ -298,9 +323,7 @@ h2.mayorIgualProject {
 /* Estilos aplicados a: borde, espaciado interno y margen, enlace "ver sitio web" y al fondo cuando se hace hover */
  .proyect {
 
-  padding-top: 45px;
-
-  padding-bottom: 45px;
+  padding: 45px;
 
   border: 2px solid #f800a1;
 
@@ -420,10 +443,10 @@ ________________________________________________________________________________
 }
 
 
-#imagenJmUno {
-  margin-top: 45px;
-  width: 580px;
-}
+// #imagenJmUno {
+//   margin-top: 45px;
+//   width: 580px;
+// }
 
 
 #imagenJmDos {

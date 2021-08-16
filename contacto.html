@@ -43,12 +43,12 @@
     </div>
     <div class="nav-menu">
       <ul>
-			  <a href="./index.html"><li><h2 class="mt">Home</h2><i>Go to</i></li> <img class="logoJM" src="./img/logos/logojm.svg" alt=""></a>
+        <a href="./index.html"><li><h2 class="mt">Inicio</h2><i>Ir a</i></li> <img class="logoJM" src="./img/logos/logojm.svg" alt=""></a>
         <a href="./acerca de mi.html"><li><h2 class="mb">Acerca de</h2><i>mí</i></li></a>
         <a href="./habilidades.html"><li><h2 class="mt">Habilidades</h2><i>Mis</i></li></a>
         <a href="./proyectos.html"><li><h2 class="mt">Proyectos</h2><i>Mis</i></li></a>
-        <a href="./contacto.html"><li><h2 class="mb">Contact</h2><i>Me</i></li></a>
-      </ul>
+        <a href="./contacto.html"><li><h2 class="mt">Contacto</h2><i>Ir a</i></li></a>
+    </ul>
     </div>
 
 <!-- _________________________________________________________________________________________________
@@ -87,7 +87,7 @@ ________________________________________________________________________________
       </div>
   
       <div id=""></div>
-      <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }</div>
+      <div class="envelope {{ flipCard ? 'active' : '' }}">
       <div class="contact-wrapper">
           <div class="envelope {{ flipCard ? 'active' : '' }}">
             <div class="back paper"></div>
