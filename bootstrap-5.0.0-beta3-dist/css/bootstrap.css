@@ -545,6 +545,13 @@ progress {
   margin-right: 0.5rem;
 }
 
+@media (max-width: 760px) {
+  .list-inline-item {
+    padding: 7px;
+    
+  }
+}
+
 .initialism {
   font-size: 0.875em;
   text-transform: uppercase;

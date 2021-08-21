@@ -1,12 +1,6 @@
 /*______________________________________________________________________________________________________
 
-                                    ESTILOS PERSONALIZADOS
-
-______________________________________________________________________________________________________*/
-
-/*______________________________________________________________________________________________________
-
-                                    ESTILOS GLOBALES & RESPONSIVE
+                                    ESTILOS GLOBALES & MEDIA QUERY
 
 ______________________________________________________________________________________________________*/
 
@@ -28,7 +22,6 @@ ________________________________________________________________________________
 
 }
 
-
 // MIXINS DE PARRAFOS DE LA SECCION HOME/ACERCA
 @mixin fontStyle($font-family, $font-weight, $font-style, $line-height, $margin, $padding, $font-size, $color){
 
@@ -43,8 +36,7 @@ ________________________________________________________________________________
 
 }
 
-/* Scroll Personalizado */
-
+// SROLL BAR
 ::-webkit-scrollbar {
 	  width: 12px;
 }
@@ -54,65 +46,57 @@ ________________________________________________________________________________
 	  border-radius: 5px;
 }
 
-
-@media (max-width: 800px) {
+// RESPONSIVE IMAGEN DE FRASES
+@media (max-width: 767px) {
 
   #fraseUno, #fraseDos, #fraseTres {
-    
-    max-width: 350px;
+
+    max-width: 450px;
 
   }
 }
 
-
- @media (max-width: 800px) {
-
-   #proyectosHome, .info {
-    
-     margin-left: 0px;
-   }
- }
-
-
-  @media (max-width: 800px) {
- 
-   .imagenJm {
-     width: 150px;
-     margin-top: 0px;
-     border-radius: 50%;
-    
-   }
- }
-
+// ESTILOS APLICADOS A LA SECCION ACERCA DE MI DE LA HOME, MAX-WIDTH 991PX SE INVIERTA LAS COLUMNAS DE TEXTO Y FOTO JM
  @media (max-width: 991px) {
- 
+
   #acercaDeMiHome {
-    
+
     padding-top: 69px;
     display: flex;
     flex-direction: column-reverse;
-   
+
   }
 }
 
+// ESTILOS APLICADOS AL SEGUNDO PARRAFO E IMAGEN DE LA PAGINA ACERCA DE MI, MAX-WIDTH 1199PX SE INVIERTA LAS COLUMNAS DE TEXTO Y FOTO JM
 @media (max-width: 1199px) {
- 
+
   #aboutSec2 {
-    
+
     display: flex;
     flex-direction: column-reverse;
-    
+
   }
 }
 
-
+// BOTON "Curriculum Vitae (PDF)" CON RESPONSIVE, TENGA ALINEACION CENTRADA
 @media (max-width: 1199px) {
- 
-  .cv {
-    
-    position: absolute;
-    margin-top: 600px;
-    
+
+  #btnCv {
+
+    display: flex;
+    justify-content: center;
+
+  }
+}
+
+// TODO.
+@media (max-width: 1199px) {
+
+  #imagenJmDos {
+
+    margin-top: 69px;
+
   }
 }
 
@@ -123,22 +107,24 @@ ________________________________________________________________________________
   .proyectInfo {
 
     & h2, p {text-align: center};
-    
+
 
   }
 }
-  
-  @media (max-width: 767px) {
+
+// PAGINA PROYECTOS. RESPONSIVE LOS ELEMENTOS ESTEN ALINEADOS AL CENTRO.
+@media (max-width: 767px) {
 
   .proyectInfo, .btnWeb, .ContainerImgProyect {
 
     display: flex;
     justify-content: center;
-  
+
   }
 }
-  
-  @media (max-width: 767px) {
+
+// PAGINA PROYECTOS. RESPONSIVE LAS IMAGENES DE CADA PROYECTO TENGAN UN WIDTH DE 400PX.
+@media (max-width: 767px) {
 
   .imgProyect {
 
@@ -148,6 +134,202 @@ ________________________________________________________________________________
 }
 }
 
+// PAGINA HOME. RESPONSIVE LOS DIV QUE CONTIENEN TITULO Y PARRAFO DE LOS PROYECTOS, OBTENGAN PADDING LEFT & RIGHT.
+  @media (min-width: 300px) {
+
+  .proyect {
+
+    padding-left: 45px;
+    padding-right: 45px;
+
+}
+}
+
+// PAGINA HOME. SECCION CONTACTO, EN RESPONSIVE
+@media (max-width: 991px) {
+
+  #mayorIgualDownContact {
+
+    position:absolute;
+    margin-top: 369px;
+
+}
+}
+
+
+// ESTILOS AL DIV DEL FORMULARIO DE LA PAGINA CONTACTO
+@media (min-width: 991px) {
+
+  #formContactPage {
+
+    max-width: 510px;
+  }
+}
+
+// ESTILOS AL DIV CON TEXTO DE LA PÁGINA MIS HABILIDADES. CENTRAR TEXTO EN MOBILE.
+@media (max-width: 760px) {
+
+  .textoSkills h3, h5, ul {
+
+    text-align: center;
+  }
+}
+
+// PAGINA ACERCA DE MI. RESPONSIVE, EL TEXTO ALINEAR AL CENTRO.
+@media (max-width: 760px) {
+
+  #textJm p, #textJmDos p {
+
+    text-align: center;
+
+  }
+}
+
+// PAGINA HOME. RESPONSIVE, ALINEAR AL CENTRO TODO EL TEXTO.
+@media (max-width: 760px) {
+
+  #acercaDeMiHome p {
+
+    text-align: center;
+
+  }
+}
+
+// PAGINA HOME. RESPONSIVE, ALINEAR AL CENTRO TODO EL BOTON "MAS SOBRE MI"
+@media (max-width: 760px) {
+
+  .btnAcercaDeMi {
+
+  display: flex;
+  justify-content: center;
+
+  }
+}
+
+// PAGINA HOME, SECCION CONTACTO Y PAGINA CONTACTO. RESPONSIVE, ALINEAR EL TEXTO AL CENTRO.
+@media (max-width: 760px) {
+
+  .textContact {
+
+    text-align: center;
+
+  }
+}
+
+// PAGINA HOME, SECCION HABILIDADES, RESPONSIVE EL DIV CON EL TITULO Y TEXTO DE WORKFLOW CENTRADO.
+@media (max-width: 760px) {
+
+  #workflow {
+
+    display: flex;
+    justify-content: center;
+
+  }
+}
+
+
+// PAGINA ACERCA DE MI. RESPONSIVE IMAGENES.
+@media (max-width: 766px) {
+
+  #imagenJmDos {
+
+    display: none;
+
+   }
+}
+
+@media (max-width: 766px) {
+
+  #imagenJmUno {
+
+    display: none;
+
+   }
+}
+
+@media (max-width: 768px) {
+
+  #imagenJmUnoMobile {
+
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 400px;
+    width: 85%;
+    height: 500px;
+    background-image: url('../img/jmConNotebookMobile.png');
+    background-size: cover;
+
+   }
+}
+
+@media (min-width: 767px) {
+
+  #imagenJmUnoMobile {
+
+    display: none;
+
+   }
+}
+
+
+@media (max-width: 768px) {
+
+  #imagenJmDosMobile {
+
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //width: 400px;
+    width: 85%;
+    height: 500px;
+    background-image: url('../img/jmCasualMobile.png');
+    background-size: cover;
+
+
+   }
+}
+
+@media (min-width: 767px) {
+
+  #imagenJmDosMobile {
+
+    display: none;
+
+   }
+}
+
+// BOTON CV
+@media (max-width: 1199px) {
+
+  #btnCv {
+
+    display: none;
+
+   }
+}
+
+@media (min-width: 1199px) {
+
+  #btnCvMobile {
+
+    display: none;
+
+   }
+}
+
+@media (max-width: 1199px) {
+
+  #btnCvMobile {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 69px;
+
+   }
+}
 
 
 // ESTILOS APLICADOS AL DIV QUE CONTIENE EL FONDO DE LAS PARTICULAS ANIMADAS.
@@ -158,10 +340,12 @@ ________________________________________________________________________________
   z-index: 0;
 }
 
+
 footer {
   padding-top: 150px;
   padding-bottom: 15px;
 }
+
 
 a, ul {
   text-decoration: none;
@@ -170,38 +354,35 @@ a, ul {
 }
 
 
+
+
 /*______________________________________________________________________________________________________
 
                                     PAGINA HOME
 
 ______________________________________________________________________________________________________*/
 
-/* SECCION HEADER*/
+// HEADER
 #header {
-  // margin-top: -775px;
-  margin-top: -869px;
+  margin-top: -800px;
   z-index: 1;
   align-items: center;
 }
-  
 
-/* FRASES */
+
+// FRASES - PADDING TOP & BOTTOM
 .frases {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-/* ESTILOS APLICADO A TODOS LOS DIV QUE TIENEN CONTINDO DENTRO DE <> | $padding-top, $padding-bottom, $margin-left*/
+// ESTILOS APLICADO A TODOS LOS DIV QUE TIENEN CONTINDO DENTRO DE <> | $padding-top, $padding-bottom, $margin-left
  .info {
-  
+
   @include infoentreMayorIgual(22px, 46px, 0px)
-  
+
 }
 
-/* ESTILOS APLICADOS A LAS IMAGENES CON FRASES */
-#fraseUno, #fraseDos, #fraseTres {
-  // width: 650px;
-}
 
 .header h2 {
   padding-top: 40px;
@@ -211,39 +392,40 @@ ________________________________________________________________________________
 
 
 /*********************************************************************************************************
-    
+
     ESTILOS DE LA SECCIÓN "ACERCA DE MI"
-    
+
 **********************************************************************************************************/
 
 //Estilo aplicado al título <acerca>
 #acerca h2.mayorIgual {
-  
-  @include mayorIgual(lime, 40px, 300)
+
+  // @include mayorIgual(lime, 40px, 300)
+  @include mayorIgual(lime, 2rem, 300)
 
 }
 
-/* Estilos al primer párrafo de sección "Acerca de mí" */
+// Estilos al primer párrafo de sección "Acerca de mí"
 p.pparrafo {
 
-  @include fontStyle('Roboto Mono' monospace, 100, italic, 37px, 0px 0px -4px, 0px 0px 7px, 28px, #fff)
+  @include fontStyle("open sans" sans-serif, 100, italic, 37px, 0px 0px -4px, 0px 0px 7px, 1.5rem, #fff)
 
 }
 
-/* Estilos al segundo y tercer párrafo de sección "Acerca de mí" */
+// Estilos al segundo y tercer párrafo de sección "Acerca de mí"
  p.sparrafo, p.tparrafo {
 
-   @include fontStyle("open sans" sans-serif, 300, normal, 30px, 0, 21px 0, 21px, #fff)
+   @include fontStyle("open sans" sans-serif, 100, normal, 30px, 0, 21px 0, 1.5rem, #fff)
 
  }
 
 
-/* Estilos al enlace "Más sobre mí" */
+// Estilos al enlace "Más sobre mí"
 .btnAcercaDeMi {
   padding-top: 22px;
   a {
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     border: 1px solid #fff;
     padding: 10px;
   }
@@ -255,60 +437,64 @@ p.pparrafo {
  }
 }
 
+
 .imagenJm {
-  width: 422px;
-  margin-top: -57px;
+
   border-radius: 50%;
-  
+
 }
+
 
 /*********************************************************************************************************
-    
+
     ESTILOS DE LA SECCIÓN "SKILLS"
-    
+
 **********************************************************************************************************/
 
-/* Estilos aplicados al Título <skills> */
+// Estilos aplicados al Título <skills>
 #skills h2.mayorIgual {
-  
-  @include mayorIgual(#ffe100, 40px, 300)
+
+  @include mayorIgual(#ffe100, 2rem, 300)
 
 }
 
-/* Estilos aplicados a las etiquetas h3, h4 y h5 */
+// Estilos aplicados a las etiquetas h3, h4 y h5
 .textoSkills {
 
-  h3 { @include fontStyle('Roboto Mono' monospace, 300, italic, 37px, 0px 0px -4px, 0, 30px, #fff);
+  h3 { @include fontStyle('Roboto Mono' monospace, 300, italic, 37px, 0px 0px -4px, 0, 1.5rem, #fff);
   }
-  
+
   h4 {
+    font-size: 1.5rem;
     font-weight: 100;
     padding-bottom: 20px;
   }
 
   h5 {
+
+      font-size: 1.5rem;
       padding-top: 20px;
-      color: #fff;  
+      color: #fff;
 
   }
 }
 
 
 /*********************************************************************************************************
-    
+
     ESTILOS DE LA SECCIÓN "PROYECTOS"
-    
+
 **********************************************************************************************************/
 
-/* Estilos aplicados al Título <proyectos> */
+// Estilos aplicados al Título <proyectos>
 h2.mayorIgualProject {
-  
-  @include mayorIgual(#f800a1, 40px, 300)
+
+  @include mayorIgual(#f800a1, 2rem, 300)
 
 }
 
 
-/* Estilos aplicados a las etiquetas p,h3,h4 del div de la sección "proyectos" */
+// Estilos aplicados a las etiquetas p,h3,h4 del div de la sección "proyectos"
 #proyectosHome p, h3 {
 
   color: #fff;
@@ -319,20 +505,35 @@ h2.mayorIgualProject {
 
 }
 
+#proyectosHome h3 {
 
-/* Estilos aplicados a: borde, espaciado interno y margen, enlace "ver sitio web" y al fondo cuando se hace hover */
+  font-size: 1.5rem;
+}
+
+#proyectosHome p {
+
+  font-size: 1rem;
+}
+
+
+// Estilos aplicados a: borde, espaciado interno y margen, enlace "ver sitio web" y al fondo cuando se hace hover
  .proyect {
 
-  padding: 45px;
+
+  padding-top: 45px;
+
+  padding-bottom: 45px;
+
+  padding-left: 15px;
 
   border: 2px solid #f800a1;
 
   margin-bottom: 20px;
 
-  &:hover { 
+  &:hover {
     background: linear-gradient(45deg, #BB1881, #F88B50);
     border: 2px solid #000;
-    
+
   }
 
   a { margin-left: 35px; }
@@ -346,15 +547,15 @@ h2.mayorIgualProject {
 
 
 /*********************************************************************************************************
-    
+
     ESTILOS DE LA SECCIÓN "CONTACTO"
-    
+
 **********************************************************************************************************/
 
-/* Estilos aplicados al Título <contacto> */
+// Estilos aplicados al Título <contacto>
 #contacto h2.mayorIgual {
-  
-  @include mayorIgual(#fff, 40px, 300)
+
+  @include mayorIgual(#fff, 2rem, 300)
 
 }
 
@@ -365,7 +566,7 @@ h2.mayorIgualProject {
 
 .textContact {
 
-  font-size: 25px;
+  font-size: 1.5rem;
   padding-top: 22px;
   padding-bottom: 149px;
 
@@ -381,11 +582,11 @@ h2.mayorIgualProject {
   margin-top: 69px;
   margin-right: 150PX;
 
-} 
+}
 
 #mayorIgualDownContact {
 
-  padding-top: 169px;
+  padding-top: 269px;
 
 }
 
@@ -393,8 +594,83 @@ h2.mayorIgualProject {
 
   margin-top: -150px;
 
+}
+
+// PAGINA CONTACTO. PADDING A LA LISTA DE ICONOS DE REDES SOCIALES.
+#socialNetwork ul li {
+
+  padding: 10px;
 
 }
+
+//FORMULARIO DE CONTACTO
+.formContact {
+  font-family: sans-serif;
+}
+
+.top-wrapper, .bottom-wrapper {
+
+  background: linear-gradient(45deg, #BB1881, #F88B50);
+  color: #fff;
+
+}
+
+.top-wrapper {
+  padding: 2em 2em 0;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.bottom-wrapper {
+  padding: 0 2em 2em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+
+}
+
+.envelope form label {
+  display: block;
+  padding-bottom: 0.5em;
+}
+
+.envelope form input,
+.envelope form textarea {
+  width: 100%;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.envelope form input {
+  border-width: 0 0 0.1em;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.envelope form textarea {
+  border: 0.1em solid #fff;
+  border-radius: 0.25em;
+}
+
+
+/* BOTON ENVIAR */
+.envelope form .submit-card {
+  background: #fff;
+  color: #222;
+  text-align: center;
+  padding: 0.5em;
+  background: #fff;
+  width: 100%;
+  border: 0;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.envelope form .input {
+  padding-bottom: 1em;
+}
+
 
 /*_________________________________________________________________________________________________________________
 
@@ -416,7 +692,7 @@ ________________________________________________________________________________
   p {
     font-family: 'Roboto Mono', monospace;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1rem;
     color: #fff;
 
   }
@@ -429,41 +705,52 @@ ________________________________________________________________________________
   p {
   font-family: "open sans", sans-serif;
   font-style: normal;
-  font-size: 23px;
+  font-size: 1rem;
   color: #fff;
 }
 }
 
 
 #textJm span {
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: bold;
   color: #85fd15;
 
 }
 
 
-// #imagenJmUno {
-//   margin-top: 45px;
-//   width: 580px;
-// }
+#imagenJmUno {
+
+  margin-top: -22px;
+  width: 100%;
+  height: 580px;
+  background-image: url('../img/jmConNotebook.png');
+  background-size: cover;
+
+ }
 
 
 #imagenJmDos {
-  width: 580px;
+  // width: auto;
+  height: 580px;
+  background-image: url('../img/jmCasual.png');
+  background-size: cover;
+
 }
 
 
-/* Estilos aplicados al botón "Curriculum Vitae (PDF) de la página "Acerca de mí" */
+
+
+// Estilos aplicados al botón "Curriculum Vitae (PDF) de la página "Acerca de mí"
 .cv {
   color: #ffe100;
   font-size: 19px;
-  margin-left: 35px;
+  // margin-left: 35px;
   background-color: #000;
   padding: 25px;
   border: 0;
   border: 1px solid #ffe100;
-  margin-left: 150px;
+  // margin-left: 150px;
 
   &:hover {
 
@@ -478,8 +765,6 @@ ________________________________________________________________________________
 }
 
 
-
-
 /*_________________________________________________________________________________________________________________
 
                                     PAGINA SKILLS
@@ -490,9 +775,10 @@ ________________________________________________________________________________
   margin-top: -400px;
 }
 
-#textoSkills h4 {
+#textoSkills h3, h5 {
 
   color: #fff;
+  font-size: 1.5rem;
 
 }
 
@@ -507,22 +793,18 @@ ________________________________________________________________________________
 }
 
 
-.titleProject h2 {
-
-  color: red;
-
-}
-  .textoProyecto h3 {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    font-size: 30px;
-    color: #fff;
-  }
+   .textoProyecto p {
+     font-family: "open sans", sans-serif;
+     font-weight: 300;
+     font-size: 1rem;
+     color: #fff;
+   }
 
  .titleProject {
+   padding-bottom: 15px;
    font-family: "open sans", sans-serif;
    font-weight: bold;
-   font-size: 35px;
+   font-size: 2rem;
    color: #fff;
  }
 
@@ -559,7 +841,7 @@ ________________________________________________________________________________
 
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
-  
+
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
 
@@ -585,3 +867,17 @@ ________________________________________________________________________________
   margin-top: -345px;
 
 }
+
+.info p {
+
+  font-size: 1.5rem;
+
+}
+
+#infoContactPage {
+
+  max-width: 1366px;
+
+
+}
+

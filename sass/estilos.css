@@ -1,15 +1,9 @@
 @charset "UTF-8";
 /*______________________________________________________________________________________________________
 
-                                    ESTILOS PERSONALIZADOS
+                                    ESTILOS GLOBALES & MEDIA QUERY
 
 ______________________________________________________________________________________________________*/
-/*______________________________________________________________________________________________________
-
-                                    ESTILOS GLOBALES & RESPONSIVE
-
-______________________________________________________________________________________________________*/
-/* Scroll Personalizado */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -19,23 +13,9 @@ ________________________________________________________________________________
   border-radius: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   #fraseUno, #fraseDos, #fraseTres {
-    max-width: 350px;
-  }
-}
-
-@media (max-width: 800px) {
-  #proyectosHome, .info {
-    margin-left: 0px;
-  }
-}
-
-@media (max-width: 800px) {
-  .imagenJm {
-    width: 150px;
-    margin-top: 0px;
-    border-radius: 50%;
+    max-width: 450px;
   }
 }
 
@@ -65,9 +45,19 @@ ________________________________________________________________________________
 }
 
 @media (max-width: 1199px) {
-  .cv {
-    position: absolute;
-    margin-top: 600px;
+  #btnCv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  #imagenJmDos {
+    margin-top: 69px;
   }
 }
 
@@ -97,6 +87,158 @@ ________________________________________________________________________________
   }
 }
 
+@media (min-width: 300px) {
+  .proyect {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (max-width: 991px) {
+  #mayorIgualDownContact {
+    position: absolute;
+    margin-top: 369px;
+  }
+}
+
+@media (min-width: 991px) {
+  #formContactPage {
+    max-width: 510px;
+  }
+}
+
+@media (max-width: 760px) {
+  .textoSkills h3, h5, ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
+  #textJm p, #textJmDos p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
+  #acercaDeMiHome p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .btnAcercaDeMi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .textContact {
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
+  #workflow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 766px) {
+  #imagenJmDos {
+    display: none;
+  }
+}
+
+@media (max-width: 766px) {
+  #imagenJmUno {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #imagenJmUnoMobile {
+    margin-top: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    height: 500px;
+    background-image: url("../img/jmConNotebookMobile.png");
+    background-size: cover;
+  }
+}
+
+@media (min-width: 767px) {
+  #imagenJmUnoMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #imagenJmDosMobile {
+    margin-top: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    height: 500px;
+    background-image: url("../img/jmCasualMobile.png");
+    background-size: cover;
+  }
+}
+
+@media (min-width: 767px) {
+  #imagenJmDosMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  #btnCv {
+    display: none;
+  }
+}
+
+@media (min-width: 1199px) {
+  #btnCvMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  #btnCvMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 69px;
+  }
+}
+
 #particles-js {
   width: 100%;
   height: 100vh;
@@ -120,29 +262,25 @@ a, ul {
                                     PAGINA HOME
 
 ______________________________________________________________________________________________________*/
-/* SECCION HEADER*/
 #header {
-  margin-top: -869px;
+  margin-top: -800px;
   z-index: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-/* FRASES */
 .frases {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-/* ESTILOS APLICADO A TODOS LOS DIV QUE TIENEN CONTINDO DENTRO DE <> | $padding-top, $padding-bottom, $margin-left*/
 .info {
   padding-top: 22px;
   padding-bottom: 46px;
   margin-left: 0px;
 }
 
-/* ESTILOS APLICADOS A LAS IMAGENES CON FRASES */
 .header h2 {
   padding-top: 40px;
   font-family: 'Roboto Mono', monospace;
@@ -150,48 +288,45 @@ ________________________________________________________________________________
 }
 
 /*********************************************************************************************************
-    
+
     ESTILOS DE LA SECCIÓN "ACERCA DE MI"
-    
+
 **********************************************************************************************************/
 #acerca h2.mayorIgual {
   color: lime;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 300;
 }
 
-/* Estilos al primer párrafo de sección "Acerca de mí" */
 p.pparrafo {
-  font-family: "Roboto Mono" monospace;
+  font-family: "open sans" sans-serif;
   font-weight: 100;
   font-style: italic;
   line-height: 37px;
   margin: 0px 0px -4px;
   padding: 0px 0px 7px;
-  font-size: 28px;
+  font-size: 1.5rem;
   color: #fff;
 }
 
-/* Estilos al segundo y tercer párrafo de sección "Acerca de mí" */
 p.sparrafo, p.tparrafo {
   font-family: "open sans" sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   line-height: 30px;
   margin: 0;
   padding: 21px 0;
-  font-size: 21px;
+  font-size: 1.5rem;
   color: #fff;
 }
 
-/* Estilos al enlace "Más sobre mí" */
 .btnAcercaDeMi {
   padding-top: 22px;
 }
 
 .btnAcercaDeMi a {
   color: #fff;
-  font-size: 20px;
+  font-size: 1rem;
   border: 1px solid #fff;
   padding: 10px;
 }
@@ -203,24 +338,20 @@ p.sparrafo, p.tparrafo {
 }
 
 .imagenJm {
-  width: 422px;
-  margin-top: -57px;
   border-radius: 50%;
 }
 
 /*********************************************************************************************************
-    
+
     ESTILOS DE LA SECCIÓN "SKILLS"
-    
+
 **********************************************************************************************************/
-/* Estilos aplicados al Título <skills> */
 #skills h2.mayorIgual {
   color: #ffe100;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 300;
 }
 
-/* Estilos aplicados a las etiquetas h3, h4 y h5 */
 .textoSkills h3 {
   font-family: "Roboto Mono" monospace;
   font-weight: 300;
@@ -228,42 +359,51 @@ p.sparrafo, p.tparrafo {
   line-height: 37px;
   margin: 0px 0px -4px;
   padding: 0;
-  font-size: 30px;
+  font-size: 1.5rem;
   color: #fff;
 }
 
 .textoSkills h4 {
+  font-size: 1.5rem;
   font-weight: 100;
   padding-bottom: 20px;
 }
 
 .textoSkills h5 {
+  font-size: 1.5rem;
   padding-top: 20px;
   color: #fff;
 }
 
 /*********************************************************************************************************
-    
+
     ESTILOS DE LA SECCIÓN "PROYECTOS"
-    
+
 **********************************************************************************************************/
-/* Estilos aplicados al Título <proyectos> */
 h2.mayorIgualProject {
   color: #f800a1;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 300;
 }
 
-/* Estilos aplicados a las etiquetas p,h3,h4 del div de la sección "proyectos" */
 #proyectosHome p, h3 {
   color: #fff;
   margin-left: 35px;
   padding-bottom: 15px;
 }
 
-/* Estilos aplicados a: borde, espaciado interno y margen, enlace "ver sitio web" y al fondo cuando se hace hover */
+#proyectosHome h3 {
+  font-size: 1.5rem;
+}
+
+#proyectosHome p {
+  font-size: 1rem;
+}
+
 .proyect {
-  padding: 45px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 15px;
   border: 2px solid #f800a1;
   margin-bottom: 20px;
 }
@@ -284,14 +424,13 @@ h2.mayorIgualProject {
 }
 
 /*********************************************************************************************************
-    
+
     ESTILOS DE LA SECCIÓN "CONTACTO"
-    
+
 **********************************************************************************************************/
-/* Estilos aplicados al Título <contacto> */
 #contacto h2.mayorIgual {
   color: #fff;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -301,7 +440,7 @@ h2.mayorIgualProject {
 }
 
 .textContact {
-  font-size: 25px;
+  font-size: 1.5rem;
   padding-top: 22px;
   padding-bottom: 149px;
 }
@@ -317,11 +456,78 @@ h2.mayorIgualProject {
 }
 
 #mayorIgualDownContact {
-  padding-top: 169px;
+  padding-top: 269px;
 }
 
 #socialNetwork {
   margin-top: -150px;
+}
+
+#socialNetwork ul li {
+  padding: 10px;
+}
+
+.formContact {
+  font-family: sans-serif;
+}
+
+.top-wrapper, .bottom-wrapper {
+  background: linear-gradient(45deg, #BB1881, #F88B50);
+  color: #fff;
+}
+
+.top-wrapper {
+  padding: 2em 2em 0;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.bottom-wrapper {
+  padding: 0 2em 2em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.envelope form label {
+  display: block;
+  padding-bottom: 0.5em;
+}
+
+.envelope form input,
+.envelope form textarea {
+  width: 100%;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.envelope form input {
+  border-width: 0 0 0.1em;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.envelope form textarea {
+  border: 0.1em solid #fff;
+  border-radius: 0.25em;
+}
+
+/* BOTON ENVIAR */
+.envelope form .submit-card {
+  background: #fff;
+  color: #222;
+  text-align: center;
+  padding: 0.5em;
+  background: #fff;
+  width: 100%;
+  border: 0;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.envelope form .input {
+  padding-bottom: 1em;
 }
 
 /*_________________________________________________________________________________________________________________
@@ -343,7 +549,7 @@ ________________________________________________________________________________
 #aboutSec1 p {
   font-family: 'Roboto Mono', monospace;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -354,30 +560,37 @@ ________________________________________________________________________________
 #aboutSec2 p {
   font-family: "open sans", sans-serif;
   font-style: normal;
-  font-size: 23px;
+  font-size: 1rem;
   color: #fff;
 }
 
 #textJm span {
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: bold;
   color: #85fd15;
 }
 
-#imagenJmDos {
-  width: 580px;
+#imagenJmUno {
+  margin-top: -22px;
+  width: 100%;
+  height: 580px;
+  background-image: url("../img/jmConNotebook.png");
+  background-size: cover;
 }
 
-/* Estilos aplicados al botón "Curriculum Vitae (PDF) de la página "Acerca de mí" */
+#imagenJmDos {
+  height: 580px;
+  background-image: url("../img/jmCasual.png");
+  background-size: cover;
+}
+
 .cv {
   color: #ffe100;
   font-size: 19px;
-  margin-left: 35px;
   background-color: #000;
   padding: 25px;
   border: 0;
   border: 1px solid #ffe100;
-  margin-left: 150px;
 }
 
 .cv:hover {
@@ -399,8 +612,9 @@ ________________________________________________________________________________
   margin-top: -400px;
 }
 
-#textoSkills h4 {
+#textoSkills h3, h5 {
   color: #fff;
+  font-size: 1.5rem;
 }
 
 /*_________________________________________________________________________________________________________________
@@ -412,21 +626,18 @@ ________________________________________________________________________________
   margin-top: -400px;
 }
 
-.titleProject h2 {
-  color: red;
-}
-
-.textoProyecto h3 {
-  font-family: 'Roboto Mono', monospace;
+.textoProyecto p {
+  font-family: "open sans", sans-serif;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 1rem;
   color: #fff;
 }
 
 .titleProject {
+  padding-bottom: 15px;
   font-family: "open sans", sans-serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -489,5 +700,13 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________*/
 #containerForm {
   margin-top: -345px;
+}
+
+.info p {
+  font-size: 1.5rem;
+}
+
+#infoContactPage {
+  max-width: 1366px;
 }
 /*# sourceMappingURL=estilos.css.map */

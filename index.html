@@ -24,19 +24,21 @@
         <!-- CSS Nav menu  -->
         <link rel="stylesheet" href="./css/nav menu.css">
         
-        <!-- CSS Formulario de contacto  -->
-        <link rel="stylesheet" href="./css/formulario.css">
-
         <!-- CSS CUSTOM -->
         <!-- TODO. UNA VEZ TERMINADO EL PROYECTO, COLOCAR EL ARCHIVO estilos.css QUE SE ENCUENTRA EN LA CARPETA SASS, EN ./ -->
         <link href="./sass/estilos.css" rel="stylesheet" />
-
     </head>
     <body>
+
+        <!--____________________________________________________________________________________________________
+            
+                                            SECCION LOGO & NAV MENU 
+            _________________________________________________________________________________________________-->
 
         <div class="nav-trigger js_navbar">
 			<span></span><span></span><span></span>
 		</div>
+
 		<div class="nav-menu">
 			<ul>
 				<a href="./index.html"><li><h2 class="mt">Inicio</h2><i>Ir a</i></li> <img class="logoJM" src="./img/logos/logojm.svg" alt=""></a>
@@ -47,11 +49,10 @@
 			</ul>
 		</div>
        
-
-        <!-- _____________________________________________________________________________________________________________________
+        <!--____________________________________________________________________________________________________
             
                                             SECCION HEADER 
-            _______________________________________________________________________________________________________________________-->
+            _________________________________________________________________________________________________-->
 
         <div id="particles-js">
         </div>
@@ -74,10 +75,10 @@
             </header>
         </div>
 
-          <!-- _____________________________________________________________________________________________________________________
+          <!--___________________________________________________________________________________________________
             
                                             SECCION ACERCA DE MI 
-            _______________________________________________________________________________________________________________________-->
+            __________________________________________________________________________________________________-->
 
         <div class="container" id="acerca">
             <h2 class="mayorIgual"> &lt acerca &gt </h2>
@@ -99,25 +100,28 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 d-flex justify-content-center">
                         <!-- Foto JM -->
                         <div id="imagen">
-                            <img class="imagenJm" src="./img/jmConTraje.png" alt="Fotografía de perfil de Jonatan Meza desarrollador front-end">
+                            <img class="imagenJm" src="./img/jmConTrajeMobile.png" alt="Fotografía de perfil de Jonatan Meza desarrollador front-end">
                         </div>
+                        <!-- <div>
+                            <img class="imagenJmMobile" src="./img/jmConTraje.png" alt="Fotografía de perfil de Jonatan Meza desarrollador front-end">
+                        </div> -->
                     </div>
                </div>
         </div>
 
-         <!-- _____________________________________________________________________________________________________________________
+         <!--____________________________________________________________________________________________________
             
                                             SECCION FRASE 1 - "HAZ LO QUE AMAS, AMA LO QUE HACES" 
-            _______________________________________________________________________________________________________________________-->
+            __________________________________________________________________________________________________-->
 
         <div class="frases text-center">
-            <img id="fraseUno" src="./img/frases/haz lo que amas.png" alt="Fotografía de frase referida a la pasión por el desarrollo web front-end">
+            <img id="fraseUno" src="./img/frases/hazLoQueAmas.png" alt="Fotografía de frase referida a la pasión por el desarrollo web front-end">
         </div>
         
-          <!-- _____________________________________________________________________________________________________________________
+          <!--___________________________________________________________________________________________________
             
                                             SECCION SKILLS
-            _______________________________________________________________________________________________________________________-->
+            __________________________________________________________________________________________________-->
         <div id="skillSection">
             <div class="container">
                 <div class="">
@@ -140,12 +144,15 @@
                                         <li class="list-inline-item"><i><img src="./img/iconos/wordpress.svg" alt="icono de wordpress" width="55"></i></li> 
                                     </ul>
                                     <h5>Workflow</h5>
-                                    <ul class="fa-ul mb-0">
-                                        <li> <span class="fa-li"><i class="fas fa-check"></i></span> Mobile-First, Responsive Design</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Cross Browser Testing & Debugging</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Cross Functional Teams</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Agile Development & Scrum</li>
-                                    </ul>
+                                    <div id="workflow" class="container fluid">
+                                        <ul class="fa-ul mb-0">
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span> Mobile-First, Responsive Design</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Cross Browser Testing & Debugging</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Cross Functional Teams</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Agile Development & Scrum</li>
+                                        </ul>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             
@@ -156,19 +163,19 @@
             </div>
         </div>    
         
-        <!-- _____________________________________________________________________________________________________________________
+        <!--_____________________________________________________________________________________________________
             
                                             SECCION FRASE 2 - "SIEMPRE POSITIVO, NUNCA NEGATIVO"
-            _______________________________________________________________________________________________________________________-->
+            __________________________________________________________________________________________________-->
 
         <div class="frases text-center">
-            <img id="fraseDos" src="./img/frases/siempre positivo.png" alt="imagen con frase siempre positivo, nunca negativo para desarrollar web ">
+            <img id="fraseDos" src="./img/frases/siemprePositivo.png" alt="imagen con frase siempre positivo, nunca negativo para desarrollar web ">
         </div>
 
-        <!-- _____________________________________________________________________________________________________________________
+        <!--_____________________________________________________________________________________________________
             
                                             SECCION PROYECTOS
-            _______________________________________________________________________________________________________________________-->
+            ___________________________________________________________________________________________________-->
 
         <div class="container">
             <div class="">
@@ -219,34 +226,36 @@
             <h2 class="mayorIgualProject"> &lt /proyectos &gt</h2>
         </div>
 
-        <!-- _____________________________________________________________________________________________________________________
+        <!--_____________________________________________________________________________________________________
             
                                             SECCION FRASE 3 - "CODIGO ES POESÍA"
-            _______________________________________________________________________________________________________________________-->
+            __________________________________________________________________________________________________-->
 
         <div class="frases text-center">
-            <img id="fraseTres" src="./img/frases/codigo es poesia.png" alt="imagen con la frase codigo es poesía para el arte del desarrollo web front-end">
+            <img id="fraseTres" src="./img/frases/codigoEsPoesia.png" alt="imagen con la frase codigo es poesía para el arte del desarrollo web front-end">
         </div>
 
-        <!-- _____________________________________________________________________________________________________________________
+        <!--_____________________________________________________________________________________________________
             
                                             SECCION CONTACTO
-            _______________________________________________________________________________________________________________________-->
+            __________________________________________________________________________________________________-->
         
-        <div class="container" id="">
+        <div class="container">
             <div id="contacto">
-                <div id="" class="row">
-                    <div id="" class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-7">
                         <h2 class="mayorIgual"> &lt contacto &gt </h2>
-                        <div id="" class="info">
-                            <p class="textContact">Siempre estoy preparado para nuevos desafíos <br> y las oportunidades internacionales. <br> Contáctame a través del siguiente formulario <br> o escríbeme a <span>info@jonatanmeza.com</span></p>
+                        <div class="info">
+                            <p class="textContact">Siempre estoy preparado para nuevos desafíos y las oportunidades internacionales. Contáctame a través del siguiente formulario o escríbeme a 
+                                <a href="mailto:info@jonatanmeza.com"><span>info@jonatanmeza.com</span></a></p>
                             <!-- REDES SOCIALES -->
                             <div id="socialNetwork">
                                 <ul class="list-inline dev-icons pt-3">
-                                    <li class="list-inline-item"><i><img src="./img/redes sociales/facebook.svg" alt="Icono de html5" width="40"></i></li> 
-                                    <li class="list-inline-item"><i><img src="./img/redes sociales/instagram.svg" alt="Icono de css3" width="40"></i></li> 
-                                    <li class="list-inline-item"><i><img src="./img/redes sociales/twitter.svg" alt="icono de JavaScript" width="40"></i></li> 
-                                    <li class="list-inline-item"><i><img src="./img/redes sociales/github.svg" alt="icono de bootstrap-5" width="40"></i></li> 
+                                    <a href="#"><li class="list-inline-item"><i><img src="./img/redes sociales/facebook.svg" alt="icono de facebook" width="40"></i></li></a>
+                                    <a href="#"><li class="list-inline-item"><i><img src="./img/redes sociales/instagram.svg" alt="icono de instagram" width="40"></i></li></a>
+                                    <a href="#"><li class="list-inline-item"><i><img src="./img/redes sociales/twitter.svg" alt="icono de twitter" width="40"></i></li></a>
+                                    <a href="#"><li class="list-inline-item"><i><img src="./img/redes sociales/linkedin.svg" alt="icono de linkedin" width="40"></i></li></a>
+                                    <a href="#"><li class="list-inline-item"><i><img src="./img/redes sociales/github.svg" alt="icono de github" width="40"></i></li></a>
                                 </ul>
                             </div>
                         </div>
@@ -254,11 +263,11 @@
                         
                     </div>
               
-                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-5">
                         <!-- FORMULARIO -->
-                        <div id="formContactHome">
+                        <div class="container-fluid" id="formContactHome">
                             <div class="contact-wrapper">
-                                <div class="envelope {{ flipCard ? 'active' : '' }}">
+                                <div class="envelope">
                                   <div class="back paper"></div>
                                   <div class="content">
                                     <div class="form-wrapper">
@@ -293,18 +302,15 @@
                                 </div>
                             </div>
                         </div>
-                        
-                    </div>
+                    </div> 
                </div>
             </div>
         </div>
 
-        
-        <!-- _____________________________________________________________________________________________________________________
+        <!--______________________________________________________________________________________________________
             
                                             SECCION FOOTER
-            _______________________________________________________________________________________________________________________-->   
-
+            ___________________________________________________________________________________________________-->   
        <div id="footer" class="containter">
             <footer class="text-center">
                 <div class="text-center text-white">
@@ -313,10 +319,10 @@
             </footer>
         </div>
 
-        <!-- _____________________________________________________________________________________________________________________
+        <!--______________________________________________________________________________________________________
             
                                             LINK DE SCRIPTS JS
-            _______________________________________________________________________________________________________________________-->
+            ___________________________________________________________________________________________________-->
         
         <!-- Nav menu JS-->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./js/nav menu.js"></script>
